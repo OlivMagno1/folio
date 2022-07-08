@@ -1,0 +1,44 @@
+<template>
+  <nav>
+    <router-link to="/">About me</router-link>
+    <router-link to="/folio">Portfolio</router-link>
+    <router-link to="/skills">Conhecimentos</router-link>
+  </nav>
+</template>
+
+<script>
+export default {
+  name: "MenuNav",
+};
+</script>
+
+<style scoped>
+nav {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #252422;
+
+  margin-left: 20vw;
+  width: 20vw;
+  padding: 30px;
+}
+
+nav a {
+  font-size: 1.25em;
+  font-weight: 100;
+  color: #c2b97f;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+nav a:hover {
+  transform: scale(1.1);
+  color: #f4f4f4;
+}
+
+nav a.router-link-exact-active {
+  color: #f4f4f4;
+}
+</style>
