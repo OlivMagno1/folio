@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from "vue-router";
 import AboutMe from "@/views/AboutMe.vue";
 import PortfolioCarousel from "@/views/PortfolioCarousel.vue";
+import SkillsView from "@/views/SkillsView.vue";
 
 const routes = [
   {
@@ -12,6 +13,11 @@ const routes = [
     path: "/folio",
     name: "folio",
     component: PortfolioCarousel,
+  },
+  {
+    path: "/skills",
+    name: "skills",
+    component: SkillsView,
   },
 ];
 
