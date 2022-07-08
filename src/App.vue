@@ -1,30 +1,50 @@
 <template>
-  <nav>
-    <router-link to="/">About me</router-link> |
-    <router-link to="/folio">Portfolio</router-link>
-  </nav>
-  <router-view />
+  <div>
+    <MenuStructure />
+    <router-view />
+  </div>
 </template>
 
+<script>
+import "boxicons";
+import MenuStructure from "./components/menu/MenuStructure.vue";
+
+export default {
+  name: "App",
+  components: {
+    MenuStructure,
+  },
+};
+</script>
+
 <style>
+* {
+  margin: 0;
+}
+
+@font-face {
+  font-family: Archivo;
+  src: url("@/assets/fonts/Archivo-Regular.ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: Archivo;
+  src: url("@/assets/fonts/Archivo-Bold.ttf");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: Archivo;
+  src: url("@/assets/fonts/Archivo-Light.ttf");
+  font-weight: 100;
+}
+
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: Archivo, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
-}
-
-nav {
-  padding: 30px;
-}
-
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-nav a.router-link-exact-active {
-  color: #42b983;
+  color: #037971;
 }
 </style>
