@@ -1,12 +1,12 @@
 <template>
   <div>
-    <h1>This is an about me page</h1>
+    <h1>This is the skills page</h1>
   </div>
 </template>
 
 <script>
 export default {
-  name: "AboutMe",
+  name: "SkillsView",
 };
 </script>
 
@@ -15,6 +15,6 @@ div {
   width: 100vw;
   height: 100vh;
 
-  background-color: #afc2d5;
+  background-color: #252422;
 }
 </style>

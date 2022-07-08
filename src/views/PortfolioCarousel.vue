@@ -9,3 +9,12 @@ export default {
   name: "PortfolioCarousel",
 };
 </script>
+
+<style scoped>
+div {
+  width: 100vw;
+  height: 100vh;
+
+  background-color: #252422;
+}
+</style>
