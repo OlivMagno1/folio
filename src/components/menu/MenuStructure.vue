@@ -24,12 +24,15 @@ export default {
   flex-flow: row nowrap;
   align-items: center;
   justify-content: center;
+
+  width: 100vw;
+  position: fixed;
   background-color: #252422;
 }
 
 span {
   font-weight: 100;
-  color: #037971;
+  color: #afc2d5;
 }
 
 h1 {

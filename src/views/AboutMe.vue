@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="container">
     <h1>This is an about me page</h1>
   </div>
 </template>
@@ -11,7 +11,12 @@ export default {
 </script>
 
 <style scoped>
-div {
+.container {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+
   width: 100vw;
   height: 100vh;
 

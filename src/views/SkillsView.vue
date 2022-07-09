@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="container">
     <h1>This is the skills page</h1>
   </div>
 </template>
@@ -11,10 +11,15 @@ export default {
 </script>
 
 <style scoped>
-div {
+.container {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+
   width: 100vw;
   height: 100vh;
 
-  background-color: #252422;
+  background-color: #afc2d5;
 }
 </style>
