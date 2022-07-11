@@ -1,19 +1,23 @@
 <template>
   <div class="container">
-    <h1>Placeholder for portfolio carousel</h1>
+    <PortfolioBody />
   </div>
 </template>
 
 <script>
+import PortfolioBody from "@/components/body/PortfolioBody.vue";
 export default {
   name: "PortfolioCarousel",
+  components: {
+    PortfolioBody,
+  },
 };
 </script>
 
 <style scoped>
 .container {
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
 
