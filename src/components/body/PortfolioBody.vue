@@ -1,9 +1,9 @@
 <template>
-  <div class="Home">
+  <div>
     <CarouselComp class="carousel" v-slot="{ currentSlide }">
       <SlideComp v-for="(slide, index) in carouselSlides" :key="index">
         <div v-show="currentSlide === index + 1" class="slide-info">
-          <img :src="require(`@/assets/images/${slide}.jpg`)" />
+          <img :src="require(`@/assets/images/${slide}.png`)" />
         </div>
       </SlideComp>
     </CarouselComp>
@@ -30,12 +30,12 @@ export default {
 
 <style scoped>
 .carousel {
-  max-height: 100vh;
-  height: 100vh;
+  width: 60vw;
+  height: 90vh;
 }
 
 .slide-info {
-  height: 100vh;
+  height: 90vh;
   margin-top: 10vh;
 
   display: flex;
