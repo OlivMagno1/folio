@@ -11,7 +11,7 @@
 <style scoped>
 .slide-enter-active,
 .slide-leave-active {
-  transition: opacity 0.7s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
 }
 
 .slide-enter-from,
