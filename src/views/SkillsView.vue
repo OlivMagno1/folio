@@ -1,19 +1,24 @@
 <template>
   <div class="container">
-    <h1>This is the skills page</h1>
+    <SkillsBody />
   </div>
 </template>
 
 <script>
+import SkillsBody from "@/components/body/SkillsBody.vue";
+
 export default {
   name: "SkillsView",
+  components: {
+    SkillsBody,
+  },
 };
 </script>
 
 <style scoped>
 .container {
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
 
