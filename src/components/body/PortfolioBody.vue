@@ -32,10 +32,12 @@ export default {
 .carousel {
   width: 60vw;
   height: 90vh;
+  max-height: 90vh;
 }
 
 .slide-info {
   height: 90vh;
+  max-height: 90vh;
   margin-top: 10vh;
 
   display: flex;
