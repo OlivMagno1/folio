@@ -27,7 +27,7 @@ export default {
   align-items: center;
   justify-content: center;
 
-  height: 10vh;
+  height: 12vh;
   width: 100vw;
   position: fixed;
   background-color: #252422;

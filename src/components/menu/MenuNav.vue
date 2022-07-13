@@ -17,11 +17,11 @@ nav {
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-end;
   background-color: #252422;
 
-  margin-left: 20vw;
-  width: 20vw;
+  gap: 16px;
+  width: 30vw;
   padding: 30px;
 }
 

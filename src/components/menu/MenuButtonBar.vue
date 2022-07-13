@@ -16,6 +16,14 @@
     >
       <i class="fa-brands fa-linkedin-in"></i>
     </a>
+    <a
+      href="https://github.com/OlivMagno1"
+      target="_blank"
+      title="Github"
+      alt="Acessar Github"
+    >
+      <i class="fa-brands fa-github"></i>
+    </a>
   </div>
 </template>
 
@@ -54,5 +62,7 @@ i {
 
 i:hover {
   transform: scale(1.1);
+  background-color: #fafafa;
+  color: #c2b97f;
 }
 </style>
