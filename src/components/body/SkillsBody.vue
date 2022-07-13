@@ -87,12 +87,12 @@ export default {
   flex-flow: row nowrap;
   justify-content: flex-end;
 
-  width: 40vw;
+  width: 30vw;
 }
 
 .skillCards {
-  width: 8vw;
-  height: 9vh;
+  width: 144px;
+  height: 82px;
 
   display: flex;
   flex-flow: row nowrap;
@@ -103,6 +103,7 @@ export default {
   margin: 10px;
   border: 1px solid #000;
   border-radius: 10px;
+  transition: 0.2s;
 }
 
 p {
