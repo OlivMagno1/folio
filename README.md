@@ -1,24 +1,4 @@
-# folio
-
-## Project setup
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+folio us currently my main portfolio project.  
+It is currently a SPA built in Vue.js with a minimal design.  
+It has a working carousel and hover animations.  
+I'm working on shifting it to a MPA so that i can embed my other projects in the carousel for an easier navigation over them.
