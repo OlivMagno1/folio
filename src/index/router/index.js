@@ -5,17 +5,17 @@ import SkillsView from "@/index/views/SkillsView.vue";
 
 const routes = [
   {
-    path: "/",
+    path: "/index/",
     name: "aboutme",
     component: AboutMe,
   },
   {
-    path: "/folio",
+    path: "/index/folio",
     name: "folio",
     component: PortfolioCarousel,
   },
   {
-    path: "/skills",
+    path: "/index/skills",
     name: "skills",
     component: SkillsView,
   },

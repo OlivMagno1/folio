@@ -1,8 +1,8 @@
 <template>
   <nav>
-    <router-link to="/">About me</router-link>
-    <router-link to="/folio">Portfolio</router-link>
-    <router-link to="/skills">Conhecimentos</router-link>
+    <router-link to="/index/">About me</router-link>
+    <router-link to="/index/folio">Portfolio</router-link>
+    <router-link to="/index/skills">Conhecimentos</router-link>
   </nav>
 </template>
 
