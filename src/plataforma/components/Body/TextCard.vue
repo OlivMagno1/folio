@@ -2,14 +2,14 @@
   <div class="container">
     <div class="text">
       <h2>
-        Ir até onde você deseja nem sempre é fácil. <br/>
+        Ir até onde você deseja nem sempre é fácil. <br />
         É necessário tempo, dinheiro e energia. <br />
         Porém quando é possível, é extremamente recompensador.
       </h2>
       <p>
-        Nós entendemos. 
-        E é por isso que Plataforma facilita o transporte dos seus usuários em todos os quesitos, 
-        oferecendo a liberdade que eles precisam, no momento em que eles precisam.
+        Nós entendemos. E é por isso que Plataforma facilita o transporte dos
+        seus usuários em todos os quesitos, oferecendo a liberdade que eles
+        precisam, no momento em que eles precisam.
       </p>
     </div>
   </div>
@@ -17,8 +17,8 @@
 
 <script>
 export default {
-  name: 'TextCard'
-}
+  name: "TextCard",
+};
 </script>
 
 <style scoped>

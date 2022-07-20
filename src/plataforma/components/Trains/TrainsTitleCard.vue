@@ -8,8 +8,8 @@
 
 <script>
 export default {
-  name: 'TitleCard'
-}
+  name: "TitleCard",
+};
 </script>
 
 <style scoped>
@@ -30,14 +30,14 @@ export default {
   background-position: center;
   width: 70vw;
   height: 85vh;
-  
+
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .title {
-  font-size:10rem;
+  font-size: 10rem;
   color: #ff764d;
 }
 </style>

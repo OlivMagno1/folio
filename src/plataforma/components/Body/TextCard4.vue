@@ -2,17 +2,17 @@
   <div class="container">
     <div class="text">
       <h2>
-        Somos apaixonados por quem somos hoje. <br/>
+        Somos apaixonados por quem somos hoje. <br />
         Mas estamos sempre buscando melhorar.
       </h2>
       <p>
-        Trabalhamos duro para criar um ambiente saudável, 
-        onde todos podemos melhorar pessoal e profissionalmente, assim como buscamos oferecer
+        Trabalhamos duro para criar um ambiente saudável, onde todos podemos
+        melhorar pessoal e profissionalmente, assim como buscamos oferecer
         oportunidades de aprendizado para nossos funcionários.
       </p>
       <p>
-        Possuímos um programa de treinamento interno que incentiva 
-        a busca constante de conhecimentos e habilidades novas.
+        Possuímos um programa de treinamento interno que incentiva a busca
+        constante de conhecimentos e habilidades novas.
       </p>
     </div>
   </div>
@@ -20,8 +20,8 @@
 
 <script>
 export default {
-  name: 'TextCard4'
-}
+  name: "TextCard4",
+};
 </script>
 
 <style scoped>

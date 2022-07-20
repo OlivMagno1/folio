@@ -2,13 +2,14 @@
   <div class="container">
     <div class="text">
       <h2>
-        Acreditamos que é necessário foco para criar aplicações potentes. <br/>
-        Trabalhamos com poucos produtos, e estamos concentrados em entregar a melhor experiência.
+        Acreditamos que é necessário foco para criar aplicações potentes. <br />
+        Trabalhamos com poucos produtos, e estamos concentrados em entregar a
+        melhor experiência.
       </h2>
       <p>
-        Ao invés de tentar atender todos os usuários com apenas um transporte, 
-        decidimos estabelecer um número seleto de produtos, que permitem uma customização 
-        que entregue ao cliente uma experiência única e pessoal.
+        Ao invés de tentar atender todos os usuários com apenas um transporte,
+        decidimos estabelecer um número seleto de produtos, que permitem uma
+        customização que entregue ao cliente uma experiência única e pessoal.
       </p>
     </div>
   </div>
@@ -16,8 +17,8 @@
 
 <script>
 export default {
-  name: 'TextCard3'
-}
+  name: "TextCard3",
+};
 </script>
 
 <style scoped>

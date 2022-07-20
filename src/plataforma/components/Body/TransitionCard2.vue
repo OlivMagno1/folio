@@ -1,14 +1,15 @@
 <template>
   <div class="container">
     <div class="videocrop">
-      <iframe 
-        width="960" 
-        height="540" 
-        src="https://www.youtube.com/embed/5s8fs_j2xlY" 
-        title="YouTube video player" 
-        frameborder="0" 
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-        allowfullscreen>
+      <iframe
+        width="960"
+        height="540"
+        src="https://www.youtube.com/embed/5s8fs_j2xlY"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      >
       </iframe>
     </div>
   </div>
@@ -16,8 +17,8 @@
 
 <script>
 export default {
-  name: 'TransitionCard2'
-}
+  name: "TransitionCard2",
+};
 </script>
 
 <style scoped>
@@ -35,5 +36,4 @@ export default {
   align-items: center;
   justify-content: space-evenly;
 }
-
 </style>

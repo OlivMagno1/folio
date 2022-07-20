@@ -17,24 +17,48 @@
       </div>
       <div class="colA">
         <h3>Educação</h3>
-        <p>Ofertas para alunos/professores <img src="../../assets/icons/chev.svg" /></p>
-        <p>Plataforma para Salas de Aula <img src="../../assets/icons/chev.svg" /></p>
-        <p>Plataforma para Universidades <img src="../../assets/icons/chev.svg" /></p>
+        <p>
+          Ofertas para alunos/professores
+          <img src="../../assets/icons/chev.svg" />
+        </p>
+        <p>
+          Plataforma para Salas de Aula
+          <img src="../../assets/icons/chev.svg" />
+        </p>
+        <p>
+          Plataforma para Universidades
+          <img src="../../assets/icons/chev.svg" />
+        </p>
       </div>
       <div class="colB">
         <h3>Inscreva-se no nosso Newsletter</h3>
-        <p>Escreva o seu e-mail abaixo para se manter atualizado com as últimas ofertas, tutoriais, downloads e mais.</p>
+        <p>
+          Escreva o seu e-mail abaixo para se manter atualizado com as últimas
+          ofertas, tutoriais, downloads e mais.
+        </p>
         <p>E-MAIL</p>
       </div>
       <div class="colA">
         <h3>Comunidade</h3>
-        <p>Encontrar grupos em Plataforma <img src="../../assets/icons/chev.svg" /></p>
-        <p>Encontrar Treinamentos Certificados <img src="../../assets/icons/chev.svg" /></p>
-        <p>Seja um Treinador Certificado <img src="../../assets/icons/chev.svg" /></p>
+        <p>
+          Encontrar grupos em Plataforma
+          <img src="../../assets/icons/chev.svg" />
+        </p>
+        <p>
+          Encontrar Treinamentos Certificados
+          <img src="../../assets/icons/chev.svg" />
+        </p>
+        <p>
+          Seja um Treinador Certificado
+          <img src="../../assets/icons/chev.svg" />
+        </p>
       </div>
       <div class="colA">
         <h3>Distribuidores</h3>
-        <p>Encontrar Distribuidores <img src="../../assets/icons/chev.svg" /></p>
+        <p>
+          Encontrar Distribuidores
+          <img src="../../assets/icons/chev.svg" />
+        </p>
         <p>Loja <img src="../../assets/icons/chev.svg" /></p>
       </div>
       <div class="colB">
@@ -48,8 +72,8 @@
 
 <script>
 export default {
-  name: 'MulticolFooter'
-}
+  name: "MulticolFooter",
+};
 </script>
 
 <style scoped>
@@ -58,7 +82,7 @@ export default {
   height: 70vh;
   margin-left: 8vw;
   margin-right: 8vw;
-  background-color:  #ffffff;
+  background-color: #ffffff;
   border-top: 1px solid #e6e6e6;
 
   display: flex;
@@ -69,7 +93,7 @@ export default {
 
 .footertitle {
   display: flex;
-  align-items:flex-start;
+  align-items: flex-start;
 
   margin-bottom: 5vh;
   width: 70vw;
@@ -128,5 +152,4 @@ p {
 p img {
   width: 1.2rem;
 }
-
 </style>

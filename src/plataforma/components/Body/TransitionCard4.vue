@@ -1,13 +1,13 @@
 <template>
   <div class="container">
-      <img src="../../assets/images/transition4.jpg" />
+    <img src="../../assets/images/transition4.jpg" />
   </div>
 </template>
 
 <script>
 export default {
-  name: 'TransitionCard4'
-}
+  name: "TransitionCard4",
+};
 </script>
 
 <style scoped>
@@ -29,7 +29,4 @@ img {
   height: auto;
   object-fit: cover;
 }
-
-
-
 </style>

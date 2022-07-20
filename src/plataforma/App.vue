@@ -7,23 +7,23 @@
 </template>
 
 <script>
-import MainMenu from './components/Menu/MainMenu.vue';
-import MulticolFooter from './components/Footer/MulticolFooter.vue';
+import MainMenu from "./components/Menu/MainMenu.vue";
+import MulticolFooter from "./components/Footer/MulticolFooter.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
     MainMenu,
-    MulticolFooter
-  }
-}
+    MulticolFooter,
+  },
+};
 </script>
 
 <style>
 @font-face {
   font-family: "Futura";
   src: local("FuturaPTBook"),
-   url(./assets/fonts/FuturaPTBook.otf) format("OpenType");
+    url(./assets/fonts/FuturaPTBook.otf) format("OpenType");
 }
 
 * {
@@ -31,7 +31,8 @@ export default {
 }
 
 #app {
-  font-family: "Futura",Avenir,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: "Futura", Avenir, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
@@ -50,7 +51,6 @@ export default {
 
 h2 {
   font-size: 2.2rem;
-
 }
 
 p {

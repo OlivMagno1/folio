@@ -12,8 +12,8 @@
 
 <script>
 export default {
-  name: 'TransitionCard'
-}
+  name: "TransitionCard3",
+};
 </script>
 
 <style scoped>
@@ -49,6 +49,4 @@ export default {
   height: 75vh;
   object-fit: cover;
 }
-
-
 </style>

@@ -6,12 +6,10 @@
     <div class="textcropright">
       <div class="textlimiter">
         <h2>
-          Estamos realmente orgulhosos do trabalho que fazemos. 
-          Mas ainda há muito o que fazer. Se quiser ser parte da gente, seja bem vindo.
+          Estamos realmente orgulhosos do trabalho que fazemos. Mas ainda há
+          muito o que fazer. Se quiser ser parte da gente, seja bem vindo.
         </h2>
-        <h2 class="highlight">
-          Ver opções de carreira
-        </h2>
+        <h2 class="highlight">Ver opções de carreira</h2>
       </div>
     </div>
   </div>
@@ -19,8 +17,8 @@
 
 <script>
 export default {
-  name: 'TransitionCard6'
-}
+  name: "TransitionCard6",
+};
 </script>
 
 <style scoped>
@@ -29,7 +27,7 @@ export default {
   height: 80vh;
   margin-left: 8vw;
   margin-right: 8vw;
-  background-color:  #ffffff;
+  background-color: #ffffff;
 
   display: flex;
   flex-flow: row nowrap;

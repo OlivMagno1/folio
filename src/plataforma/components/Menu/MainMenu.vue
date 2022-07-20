@@ -16,14 +16,11 @@
 
 <script>
 export default {
-  name: 'MainMenu',
-  props: {
-  }
-}
+  name: "MainMenu",
+};
 </script>
 
 <style scoped>
-
 .menu {
   display: flex;
   flex-flow: row nowrap;
@@ -68,5 +65,4 @@ export default {
 .menuitemblue {
   color: #0000ff;
 }
-
 </style>

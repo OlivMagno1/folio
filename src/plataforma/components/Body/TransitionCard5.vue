@@ -11,8 +11,8 @@
 
 <script>
 export default {
-  name: 'TransitionCard5'
-}
+  name: "TransitionCard5",
+};
 </script>
 
 <style scoped>
@@ -21,7 +21,13 @@ export default {
   height: 100vh;
   margin-left: 8vw;
   margin-right: 8vw;
-  background-image: linear-gradient(to right, #ffffff 15%, #d5b3ff 15%, #d5b3ff 85%, #ffffff 85%);
+  background-image: linear-gradient(
+    to right,
+    #ffffff 15%,
+    #d5b3ff 15%,
+    #d5b3ff 85%,
+    #ffffff 85%
+  );
 
   display: flex;
   flex-flow: row nowrap;
@@ -40,6 +46,4 @@ export default {
   height: 50vh;
   object-fit: cover;
 }
-
-
 </style>
