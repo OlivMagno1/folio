@@ -1,16 +1,15 @@
 <template>
   <div class="container">
-    <SkillsBody />
+    <PortfolioBody />
   </div>
 </template>
 
 <script>
-import SkillsBody from "@/components/body/SkillsBody.vue";
-
+import PortfolioBody from "@/index/components/body/PortfolioBody.vue";
 export default {
-  name: "SkillsView",
+  name: "PortfolioCarousel",
   components: {
-    SkillsBody,
+    PortfolioBody,
   },
 };
 </script>
@@ -26,5 +25,6 @@ export default {
   height: 100vh;
 
   background-color: #afc2d5;
+  overflow: hidden;
 }
 </style>

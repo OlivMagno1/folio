@@ -3,7 +3,7 @@
     <CarouselComp class="carousel" v-slot="{ currentSlide }">
       <SlideComp v-for="(slide, index) in carouselSlides" :key="index">
         <div v-show="currentSlide === index + 1" class="slide-info">
-          <img :src="require(`@/assets/images/${slide}.png`)" />
+          <img :src="require(`@/index/assets/images/${slide}.png`)" />
         </div>
       </SlideComp>
     </CarouselComp>
@@ -11,8 +11,8 @@
 </template>
 
 <script>
-import CarouselComp from "@/components/carousel/CarouselComp.vue";
-import SlideComp from "@/components/carousel/SlideComp.vue";
+import CarouselComp from "@/index/components/carousel/CarouselComp.vue";
+import SlideComp from "@/index/components/carousel/SlideComp.vue";
 
 export default {
   name: "PortfolioBody",

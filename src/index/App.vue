@@ -24,19 +24,19 @@ export default {
 
 @font-face {
   font-family: Archivo;
-  src: url("@/assets/fonts/Archivo-Regular.ttf");
+  src: url("@/index/assets/fonts/Archivo-Regular.ttf");
   font-weight: 400;
 }
 
 @font-face {
   font-family: Archivo;
-  src: url("@/assets/fonts/Archivo-Bold.ttf");
+  src: url("@/index/assets/fonts/Archivo-Bold.ttf");
   font-weight: 700;
 }
 
 @font-face {
   font-family: Archivo;
-  src: url("@/assets/fonts/Archivo-Light.ttf");
+  src: url("@/index/assets/fonts/Archivo-Light.ttf");
   font-weight: 100;
 }
 

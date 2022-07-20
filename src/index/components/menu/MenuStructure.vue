@@ -8,7 +8,7 @@
 
 <script>
 import "boxicons";
-import MenuNav from "@/components/menu/MenuNav.vue";
+import MenuNav from "@/index/components/menu/MenuNav.vue";
 import MenuButtonBar from "./MenuButtonBar.vue";
 
 export default {

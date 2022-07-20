@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory } from "vue-router";
-import AboutMe from "@/views/AboutMe.vue";
-import PortfolioCarousel from "@/views/PortfolioCarousel.vue";
-import SkillsView from "@/views/SkillsView.vue";
+import AboutMe from "@/index/views/AboutMe.vue";
+import PortfolioCarousel from "@/index/views/PortfolioCarousel.vue";
+import SkillsView from "@/index/views/SkillsView.vue";
 
 const routes = [
   {

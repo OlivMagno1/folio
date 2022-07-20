@@ -32,7 +32,7 @@
 </template>
 
 <script>
-import CardSet from "@/components/cards/CardSet.vue";
+import CardSet from "@/index/components/cards/CardSet.vue";
 
 export default {
   name: "SkillsBody",
