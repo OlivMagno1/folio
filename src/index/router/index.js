@@ -6,6 +6,10 @@ import SkillsView from "@/index/views/SkillsView.vue";
 const routes = [
   {
     path: "/",
+    redirect: "index",
+  },
+  {
+    path: "/index",
     name: "aboutme",
     component: AboutMe,
   },

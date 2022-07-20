@@ -1,6 +1,6 @@
 <template>
   <nav>
-    <router-link to="/">Sobre</router-link>
+    <router-link to="/index">Sobre</router-link>
     <router-link to="/index/folio">Portfolio</router-link>
     <router-link to="/index/skills">Conhecimentos</router-link>
   </nav>
