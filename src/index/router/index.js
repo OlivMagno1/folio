@@ -5,7 +5,7 @@ import SkillsView from "@/index/views/SkillsView.vue";
 
 const routes = [
   {
-    path: "/index/",
+    path: "/",
     name: "aboutme",
     component: AboutMe,
   },
