@@ -1,10 +1,10 @@
 <template>
   <nav>
-    <router-link to="/">Home</router-link>
-    <router-link to="/examples">Examples</router-link>
-    <router-link to="/tour">Tour</router-link>
-    <router-link to="/blog">Blog</router-link>
-    <router-link to="/help">Help</router-link>
+    <router-link to="/cafe/">Home</router-link>
+    <router-link to="/cafe/examples">Examples</router-link>
+    <router-link to="/cafe/tour">Tour</router-link>
+    <router-link to="/cafe/blog">Blog</router-link>
+    <router-link to="/cafe/help">Help</router-link>
   </nav>
 </template>
 

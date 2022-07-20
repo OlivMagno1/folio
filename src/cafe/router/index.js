@@ -8,32 +8,32 @@ import DownloadView from "@/cafe/views/DownloadView";
 
 const routes = [
   {
-    path: "/",
+    path: "/cafe/",
     name: "overview",
     component: OverviewView,
   },
   {
-    path: "/examples",
+    path: "/cafe/examples",
     name: "examples",
     component: ExamplesView,
   },
   {
-    path: "/tour",
+    path: "/cafe/tour",
     name: "tour",
     component: TourView,
   },
   {
-    path: "/blog",
+    path: "/cafe/blog",
     name: "blog",
     component: BlogView,
   },
   {
-    path: "/help",
+    path: "/cafe/help",
     name: "help",
     component: HelpView,
   },
   {
-    path: "/download",
+    path: "/cafe/download",
     name: "download",
     component: DownloadView,
   },
