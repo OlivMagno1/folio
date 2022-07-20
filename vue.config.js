@@ -10,5 +10,6 @@ module.exports = defineConfig({
     cafe: {
       entry: "src/cafe/main.js",
       title: 'Magno Oliveira - Cafe',
+    },
   }
 });
