@@ -11,5 +11,9 @@ module.exports = defineConfig({
       entry: "src/cafe/main.js",
       title: "Magno Oliveira - Cafe",
     },
+    plataforma: {
+      entry: "src/plataforma/main.js",
+      title: "Magno Oliveira - Plataforma",
+    }
   },
 });
