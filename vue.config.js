@@ -4,12 +4,12 @@ module.exports = defineConfig({
   pages: {
     index: {
       entry: "src/index/main.js",
-      title: 'Magno Oliveira - Portfolio',
+      title: "Magno Oliveira - Portfolio",
       chunks: ['chunk-vendors', 'chunk-common', 'index'],
     },
     cafe: {
       entry: "src/cafe/main.js",
-      title: 'Magno Oliveira - Cafe',
+      title: "Magno Oliveira - Cafe",
     },
-  }
+  },
 });
