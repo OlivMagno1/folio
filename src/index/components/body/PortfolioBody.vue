@@ -3,7 +3,9 @@
     <CarouselComp class="carousel" v-slot="{ currentSlide }">
       <SlideComp v-for="(slide, index) in carouselSlides" :key="index">
         <div v-show="currentSlide === index + 1" class="slide-info">
-          <img :src="require(`@/index/assets/images/${slide}.png`)" />
+          <a :href="getPage(index)">
+            <img :src="require(`@/index/assets/images/${slide}.png`)" />
+          </a>
         </div>
       </SlideComp>
     </CarouselComp>
@@ -21,9 +23,13 @@ export default {
     CarouselComp,
   },
   setup() {
-    const carouselSlides = ["scene1", "scene2"];
+    const carouselSlides = ["plataforma", "cafe"];
+    const pageList = ["/plataforma", "/cafe"];
 
-    return { carouselSlides };
+    const getPage = (index) => {
+      return pageList.at(index);
+    };
+    return { carouselSlides, getPage };
   },
 };
 </script>
