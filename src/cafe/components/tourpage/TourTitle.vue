@@ -13,7 +13,7 @@
     <div class="titlecard">
       <h2>Faça já o seu café</h2>
       <button>
-        <router-link to="/download">Download</router-link>
+        <router-link to="/index/folio">Voltar</router-link>
       </button>
     </div>
   </div>
