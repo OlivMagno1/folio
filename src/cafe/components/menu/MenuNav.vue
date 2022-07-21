@@ -1,23 +1,35 @@
 <template>
-  <nav>
-    <router-link to="/cafe/">Home</router-link>
-    <router-link to="/cafe/expresso">Expresso</router-link>
-    <router-link to="/cafe/capuccino">Capuccino</router-link>
-    <router-link to="/cafe/frapuccino">Frapuccino</router-link>
-  </nav>
+  <div class="center">
+    <nav>
+      <router-link to="/cafe/">Home</router-link>
+      <router-link to="/cafe/expresso">Expresso</router-link>
+      <router-link to="/cafe/capuccino">Capuccino</router-link>
+      <router-link to="/cafe/frapuccino">Frapuccino</router-link>
+    </nav>
+  </div>
 </template>
 
 <script></script>
 
 <style scoped>
+.center {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+
+  width: 90vw;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
 nav {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
 
-  width: 25vw;
-  padding: 30px;
+  padding: 15px;
   line-height: 3em;
+  width: 25vw;
 }
 
 nav a {

@@ -1,8 +1,6 @@
 <template>
   <div class="container">
-    <router-link to="/">
-      <box-icon name="coffee" type="logo" color="#916047"></box-icon>
-    </router-link>
+    <box-icon name="coffee" type="logo" color="#916047"></box-icon>
     <MenuNav />
     <button>
       <a href="/index/folio">Voltar</a>
