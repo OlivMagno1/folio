@@ -1,10 +1,9 @@
 <template>
   <nav>
     <router-link to="/cafe/">Home</router-link>
-    <router-link to="/cafe/examples">Examples</router-link>
-    <router-link to="/cafe/tour">Tour</router-link>
-    <router-link to="/cafe/blog">Blog</router-link>
-    <router-link to="/cafe/help">Help</router-link>
+    <router-link to="/cafe/expresso">Expresso</router-link>
+    <router-link to="/cafe/capuccino">Capuccino</router-link>
+    <router-link to="/cafe/frapuccino">Frapuccino</router-link>
   </nav>
 </template>
 

@@ -5,7 +5,7 @@
     </router-link>
     <MenuNav />
     <button>
-      <router-link to="/download">Download</router-link>
+      <a href="/index/folio">Voltar</a>
     </button>
   </div>
 </template>
