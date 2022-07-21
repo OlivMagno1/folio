@@ -6,7 +6,7 @@
 import TourTitle from "@/cafe/components/tourpage/TourTitle.vue";
 
 export default {
-  name: "TourView",
+  name: "CafeView",
   components: {
     TourTitle,
   },

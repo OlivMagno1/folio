@@ -1,41 +1,29 @@
 import { createRouter, createWebHistory } from "vue-router";
-import OverviewView from "@/cafe/views/OverviewView.vue";
-import ExamplesView from "@/cafe/views/ExamplesView.vue";
-import TourView from "@/cafe/views/TourView.vue";
-import BlogView from "@/cafe/views/BlogView.vue";
-import HelpView from "@/cafe/views/HelpView.vue";
-import DownloadView from "@/cafe/views/DownloadView";
+import CafeView from "@/cafe/views/CafeView.vue";
+import ExpressoView from "@/cafe/views/ExpressoView.vue";
+import FrapuccinoView from "@/cafe/views/FrapuccinoView.vue";
+import CapuccinoView from "@/cafe/views/CapuccinoView.vue";
 
 const routes = [
   {
     path: "/cafe/",
-    name: "overview",
-    component: OverviewView,
-  },
-  {
-    path: "/cafe/examples",
-    name: "examples",
-    component: ExamplesView,
-  },
-  {
-    path: "/cafe/tour",
     name: "tour",
-    component: TourView,
+    component: CafeView,
   },
   {
-    path: "/cafe/blog",
-    name: "blog",
-    component: BlogView,
+    path: "/cafe/expresso",
+    name: "expresso",
+    component: ExpressoView,
   },
   {
-    path: "/cafe/help",
-    name: "help",
-    component: HelpView,
+    path: "/cafe/capuccino",
+    name: "capuccino",
+    component: CapuccinoView,
   },
   {
-    path: "/cafe/download",
-    name: "download",
-    component: DownloadView,
+    path: "/cafe/frapuccino",
+    name: "frapuccino",
+    component: FrapuccinoView,
   },
 ];
 
