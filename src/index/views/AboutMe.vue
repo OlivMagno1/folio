@@ -1,10 +1,20 @@
 <template>
   <div class="container">
     <div class="textbox">
-      <h1>Olá</h1>
-      <h2 class="right">Meu nome é Magno</h2>
-      <h2>Sou desenvolvedor Front-end</h2>
-      <h2 class="right">Seja bem vindo ao meu cantinho</h2>
+      <Transition name="fade" appear id="el1">
+        <h1>Olá</h1>
+      </Transition>
+      <Transition name="fade" appear id="el2">
+        <p>
+          Meu nome é <span>Magno</span>, sou desenvolvedor Front-end. Sou
+          formado em Ciência da Computação pela Universidade Federal de São
+          Paulo (UNIFESP). Eu desenvolvo interfaces responsivas com base em
+          Vue.js, HTML e CSS.
+        </p>
+      </Transition>
+      <Transition name="fade" appear id="el3">
+        <h2 class="right">Este é o meu cantinho <span>:)</span></h2>
+      </Transition>
     </div>
   </div>
 </template>
@@ -41,7 +51,6 @@ export default {
 h1 {
   font-size: 5em;
   color: #252422;
-  margin: 0.5em;
 }
 
 h2 {
@@ -50,7 +59,36 @@ h2 {
   margin: 0.5em;
 }
 
+p {
+  font-size: 2em;
+  color: #252422;
+  margin: 0.5em;
+  text-align: justify;
+}
+
+span {
+  color: #037971;
+}
+
 .right {
   align-self: flex-end;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 1s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+
+#el2 {
+  transition-delay: 0.5s;
+}
+
+#el3 {
+  transition-delay: 1s;
 }
 </style>
