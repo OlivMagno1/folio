@@ -13,7 +13,7 @@
     <div class="titlecard">
       <h2>Faça já o seu café</h2>
       <button>
-        <router-link to="/index/folio">Voltar</router-link>
+        <a href="/index/folio">Voltar</a>
       </button>
     </div>
   </div>
