@@ -17,9 +17,9 @@
   flex-flow: row nowrap;
   justify-content: center;
 
-  width: 90vw;
+  width: 60vw;
   position: fixed;
-  left: 0;
+  left: 15vw;
   top: 0;
 }
 nav {
