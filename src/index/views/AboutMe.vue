@@ -15,13 +15,19 @@
       <Transition name="fade" appear id="el3">
         <h2 class="right">Este é o meu cantinho <span>:)</span></h2>
       </Transition>
+      <SkillsBody />
     </div>
   </div>
 </template>
 
 <script>
+import SkillsBody from "@/index/components/body/SkillsBody.vue";
+
 export default {
   name: "AboutMe",
+  components: {
+    SkillsBody,
+  },
 };
 </script>
 
@@ -33,7 +39,6 @@ export default {
   align-items: center;
 
   width: 100vw;
-  height: 100vh;
 
   background-color: #afc2d5;
 }
@@ -45,18 +50,22 @@ export default {
   justify-content: center;
   align-items: flex-start;
 
+  margin-top: 12vh;
   width: 50vw;
+  height: 88vh;
 }
 
 h1 {
   font-size: 5em;
   color: #252422;
+  cursor: default;
 }
 
 h2 {
   font-size: 3em;
   color: #252422;
   margin: 0.5em;
+  cursor: default;
 }
 
 p {
@@ -64,6 +73,7 @@ p {
   color: #252422;
   margin: 0.5em;
   text-align: justify;
+  cursor: default;
 }
 
 span {

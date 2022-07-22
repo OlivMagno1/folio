@@ -1,24 +1,24 @@
 <template>
   <div class="section">
-    <TransitionGroup name="fade" @enter="onEnter" appear>
+    <TransitionGroup name="fade" appear>
       <CardSet
         class="skillCards"
         v-for="(card, index) in skillCards"
         :id="[`index${index}`]"
         :key="index"
+        @mouseover="hover[index] = true"
+        @mouseleave="hover[index] = false"
       >
-        <div
-          class="slide-info"
-          @mouseover="hover[index] = true"
-          @mouseleave="hover[index] = false"
-        >
-          <i
-            v-if="!hover[index]"
-            class="fa-2xl"
-            :class="getCardLogo(index)"
-          ></i>
-          <p v-if="hover[index]">{{ card }}</p>
-        </div>
+        <Transition name="fade">
+          <div class="slide-info">
+            <i
+              v-if="!hover[index]"
+              class="fa-3x"
+              :class="getCardLogo(index)"
+            ></i>
+            <p v-if="hover[index]">{{ card }}</p>
+          </div>
+        </Transition>
       </CardSet>
     </TransitionGroup>
   </div>
@@ -65,15 +65,17 @@ export default {
 .section {
   display: flex;
   flex-flow: row nowrap;
-  justify-content: flex-end;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
 
-  width: 30vw;
   margin-top: 10vh;
+  width: 30vw;
 }
 
 .skillCards {
-  width: 66px;
-  height: 66px;
+  width: 90px;
+  height: 90px;
 
   display: flex;
   flex-flow: row nowrap;
@@ -82,15 +84,16 @@ export default {
 
   background-color: #252422;
   margin: 10px;
-  border: 1px solid #000;
   border-radius: 50%;
   transition: 0.2s;
 }
 
 p {
   font-family: Archivo, sans-serif;
+  font-size: 700;
   color: #c2b97f;
-  margin: 10px;
+  margin: 15px;
+  cursor: default;
 }
 
 i {
@@ -106,6 +109,10 @@ i {
 .fade-enter-from,
 .fade-leave-to {
   opacity: 0;
+}
+
+#title {
+  transition-delay: 1.5s;
 }
 
 #index0 {
