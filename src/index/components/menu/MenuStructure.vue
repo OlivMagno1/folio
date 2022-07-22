@@ -40,5 +40,6 @@ span {
 
 h1 {
   color: #f4f4f4;
+  cursor: default;
 }
 </style>
