@@ -1,5 +1,5 @@
 <template>
-  <div class="card">
+  <div>
     <transition name="card">
       <slot />
     </transition>

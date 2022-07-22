@@ -1,33 +1,26 @@
 <template>
-  <div class="visibleArea">
-    <h2>Linguagens de programação</h2>
-    <div class="section">
+  <div class="section">
+    <TransitionGroup name="fade" @enter="onEnter" appear>
       <CardSet
         class="skillCards"
-        v-for="(card, index) in skillCardsL"
+        v-for="(card, index) in skillCards"
+        :id="[`index${index}`]"
         :key="index"
       >
-        <div class="slide-info">
-          <i class="fa-2xl" :class="getCardLogoL(index)"></i>
-          <p>{{ card }}</p>
+        <div
+          class="slide-info"
+          @mouseover="hover[index] = true"
+          @mouseleave="hover[index] = false"
+        >
+          <i
+            v-if="!hover[index]"
+            class="fa-2xl"
+            :class="getCardLogo(index)"
+          ></i>
+          <p v-if="hover[index]">{{ card }}</p>
         </div>
       </CardSet>
-    </div>
-  </div>
-  <div class="visibleArea">
-    <h2>Frameworks Front-end</h2>
-    <div class="section">
-      <CardSet
-        class="skillCards"
-        v-for="(card, index) in skillCardsF"
-        :key="index"
-      >
-        <div class="slide-info">
-          <i class="fa-2xl" :class="getCardLogoF(index)"></i>
-          <p>{{ card }}</p>
-        </div>
-      </CardSet>
-    </div>
+    </TransitionGroup>
   </div>
 </template>
 
@@ -39,70 +32,58 @@ export default {
   components: {
     CardSet,
   },
+  data() {
+    return {
+      hover: [false, false, false, false, false],
+    };
+  },
   setup() {
-    //Linguagens
-    const cardLogosL = [
+    //Cards
+    const cardLogos = [
+      "fa-brands fa-vuejs",
+      "fa-brands fa-react",
       "fa-brands fa-html5",
       "fa-brands fa-css3-alt",
       "fa-brands fa-js-square",
     ];
-    const skillCardsL = ["HTML5", "CSS3", "Javascript"];
+    const skillCards = ["Vue.js", "React.js", "HTML5", "CSS3", "Javascript"];
 
-    //Frameworks
-    const cardLogosF = ["fa-brands fa-vuejs", "fa-brands fa-react"];
-    const skillCardsF = ["Vue.js", "React.js"];
-
-    const getCardLogoL = (index) => {
-      return cardLogosL.at(index);
-    };
-
-    const getCardLogoF = (index) => {
-      return cardLogosF.at(index);
+    const getCardLogo = (index) => {
+      return cardLogos.at(index);
     };
 
     return {
-      skillCardsL,
-      cardLogosL,
-      getCardLogoL,
-      skillCardsF,
-      cardLogosF,
-      getCardLogoF,
+      skillCards,
+      cardLogos,
+      getCardLogo,
     };
   },
 };
 </script>
 
 <style scoped>
-.visibleArea {
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: flex-start;
-
-  margin-top: 10vh;
-  width: 40vw;
-}
-
 .section {
   display: flex;
   flex-flow: row nowrap;
   justify-content: flex-end;
 
   width: 30vw;
+  margin-top: 10vh;
 }
 
 .skillCards {
-  width: 144px;
-  height: 82px;
+  width: 66px;
+  height: 66px;
 
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
-  align-items: flex-end;
+  align-items: center;
 
   background-color: #252422;
   margin: 10px;
   border: 1px solid #000;
-  border-radius: 10px;
+  border-radius: 50%;
   transition: 0.2s;
 }
 
@@ -115,5 +96,35 @@ p {
 i {
   color: #f4f4f4;
   margin: 15px;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 1s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+
+#index0 {
+  transition-delay: 1.5s;
+}
+
+#index1 {
+  transition-delay: 1.6s;
+}
+
+#index2 {
+  transition-delay: 1.7s;
+}
+
+#index3 {
+  transition-delay: 1.8s;
+}
+
+#index4 {
+  transition-delay: 1.9s;
 }
 </style>
