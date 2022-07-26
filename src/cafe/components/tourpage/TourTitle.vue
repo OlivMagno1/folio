@@ -13,7 +13,7 @@
     <div class="titlecard">
       <h2>Faça já o seu café</h2>
       <button>
-        <a href="/index/folio">Voltar</a>
+        <a href="/index">Voltar</a>
       </button>
     </div>
   </div>

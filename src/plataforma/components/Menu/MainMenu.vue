@@ -8,9 +8,7 @@
       <router-link to="/plataforma/avioes" class="menuitem">Aviões</router-link>
     </div>
     <div class="menu right">
-      <a href="/index/folio" class="menuitem menuitemblue">
-        Voltar para o site
-      </a>
+      <a href="/index" class="menuitem menuitemblue">Voltar para o site</a>
     </div>
   </div>
 </template>

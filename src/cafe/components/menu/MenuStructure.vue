@@ -3,7 +3,7 @@
     <box-icon name="coffee" type="logo" color="#916047"></box-icon>
     <MenuNav />
     <button>
-      <a href="/index/folio">Voltar</a>
+      <a href="/index">Voltar</a>
     </button>
   </div>
 </template>
