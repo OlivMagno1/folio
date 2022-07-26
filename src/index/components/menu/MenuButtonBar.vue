@@ -55,14 +55,14 @@ i {
   border-radius: 50%;
   width: 40px;
   height: 40px;
-  background-color: #c2b97f;
-  color: #fafafa;
+  background-color: #84a98c;
+  color: #cad2c5;
   transition: 0.2s;
 }
 
 i:hover {
   transform: scale(1.1);
-  background-color: #fafafa;
-  color: #c2b97f;
+  background-color: #cad2c5;
+  color: #84a98c;
 }
 </style>

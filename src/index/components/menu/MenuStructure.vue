@@ -30,16 +30,17 @@ export default {
   height: 12vh;
   width: 100vw;
   position: fixed;
-  background-color: #252422;
+
+  background-color: #2f3e46;
 }
 
 span {
   font-weight: 100;
-  color: #afc2d5;
+  color: #cad2c5;
 }
 
 h1 {
-  color: #f4f4f4;
+  color: #84a98c;
   cursor: default;
 }
 </style>

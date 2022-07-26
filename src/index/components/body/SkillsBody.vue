@@ -82,7 +82,7 @@ export default {
   justify-content: center;
   align-items: center;
 
-  background-color: #252422;
+  background-color: #354f52;
   margin: 10px;
   border-radius: 50%;
   transition: 0.2s;
@@ -91,13 +91,13 @@ export default {
 p {
   font-family: Archivo, sans-serif;
   font-size: 700;
-  color: #c2b97f;
+  color: #84a98c;
   margin: 15px;
   cursor: default;
 }
 
 i {
-  color: #f4f4f4;
+  color: #84a98c;
   margin: 15px;
 }
 

@@ -40,7 +40,7 @@ export default {
 
   width: 100vw;
 
-  background-color: #afc2d5;
+  background-color: #cad2c5;
 }
 
 .textbox {
@@ -57,27 +57,27 @@ export default {
 
 h1 {
   font-size: 5em;
-  color: #252422;
+  color: #2f3e46;
   cursor: default;
 }
 
 h2 {
   font-size: 3em;
-  color: #252422;
+  color: #2f3e46;
   margin: 0.5em;
   cursor: default;
 }
 
 p {
   font-size: 2em;
-  color: #252422;
+  color: #2f3e46;
   margin: 0.5em;
   text-align: justify;
   cursor: default;
 }
 
 span {
-  color: #037971;
+  color: #52796f;
 }
 
 .right {
