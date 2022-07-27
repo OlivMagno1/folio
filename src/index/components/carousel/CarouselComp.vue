@@ -101,15 +101,15 @@ i {
   border-radius: 50%;
   width: 40px;
   height: 40px;
-  background-color: #2f3e46;
-  color: #cad2c5;
+  background-color: #51011d;
+  color: #f7dfb2;
   transition: 0.2s;
 }
 
 i:hover {
   transform: scale(1.1);
-  color: #2f3e46;
-  background-color: #52796f;
+  color: #f7dfb2;
+  background-color: #a85710;
 }
 
 .pagination {
@@ -129,7 +129,7 @@ span {
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background-color: #354f52;
+  background-color: #51011d;
   transition: 0.2s;
 }
 

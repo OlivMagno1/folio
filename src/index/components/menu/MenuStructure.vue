@@ -31,16 +31,16 @@ export default {
   width: 100vw;
   position: fixed;
 
-  background-color: #2f3e46;
+  background-color: #51011d;
 }
 
 span {
   font-weight: 100;
-  color: #cad2c5;
+  color: #f7dfb2;
 }
 
 h1 {
-  color: #84a98c;
+  color: #a85710;
   cursor: default;
 }
 </style>

@@ -17,7 +17,6 @@ nav {
   flex-flow: row nowrap;
   align-items: center;
   justify-content: flex-end;
-  background-color: #2f3e46;
 
   gap: 16px;
   width: 30vw;
@@ -27,17 +26,17 @@ nav {
 nav a {
   font-size: 1.25em;
   font-weight: 100;
-  color: #84a98c;
+  color: #f7dfb2;
   text-decoration: none;
   transition: 0.2s;
 }
 
 nav a:hover {
   transform: scale(1.1);
-  color: #cad2c5;
+  color: #a85710;
 }
 
 nav a.router-link-exact-active {
-  color: #cad2c5;
+  color: #a85710;
 }
 </style>

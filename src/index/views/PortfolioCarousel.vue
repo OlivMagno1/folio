@@ -24,7 +24,7 @@ export default {
   width: 100vw;
   height: 100vh;
 
-  background-color: #cad2c5;
+  background-color: #f7dfb2;
   overflow: hidden;
 }
 </style>
