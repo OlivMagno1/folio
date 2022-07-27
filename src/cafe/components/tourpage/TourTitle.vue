@@ -26,6 +26,30 @@ export default {
 </script>
 
 <style scoped>
+@media screen and (max-width: 650px) {
+  h2 {
+    font-size: 3rem;
+    margin: 0.5rem;
+  }
+
+  h3 {
+    font-size: 1rem;
+    font-weight: 400;
+  }
+}
+
+@media screen and (min-width: 651px) {
+  h2 {
+    font-size: 5em;
+    margin: 0.5em;
+  }
+
+  h3 {
+    font-size: 2em;
+    font-weight: 400;
+  }
+}
+
 .container {
   display: flex;
   flex-flow: column nowrap;
@@ -60,16 +84,6 @@ img {
 
 .titlecard {
   width: 40vw;
-}
-
-h2 {
-  font-size: 5em;
-  margin: 0.5em;
-}
-
-h3 {
-  font-size: 2em;
-  font-weight: 400;
 }
 
 .textHighlight {

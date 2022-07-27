@@ -20,6 +20,12 @@ export default {
 </script>
 
 <style scoped>
+@media screen and (max-width: 800px) {
+  .container {
+    visibility: hidden;
+  }
+}
+
 .container {
   display: flex;
   flex-flow: row nowrap;

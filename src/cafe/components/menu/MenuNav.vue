@@ -25,11 +25,11 @@
 nav {
   display: flex;
   flex-flow: row nowrap;
-  justify-content: space-between;
+  justify-content: space-around;
 
   padding: 15px;
   line-height: 3em;
-  width: 25vw;
+  width: 50vw;
 }
 
 nav a {
