@@ -3,7 +3,7 @@
     <CarouselComp class="carousel" v-slot="{ currentSlide }">
       <SlideComp v-for="(slide, index) in carouselSlides" :key="index">
         <div v-show="currentSlide === index + 1" class="slide-info">
-          <a :href="getPage(index)">
+          <a :href="getPage(index)" target="_blank">
             <img :src="require(`@/index/assets/images/${slide}.png`)" />
           </a>
         </div>
