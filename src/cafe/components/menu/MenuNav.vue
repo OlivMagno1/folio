@@ -12,6 +12,18 @@
 <script></script>
 
 <style scoped>
+@media screen and (max-width: 1280px) {
+  nav {
+    width: 50vw;
+  }
+}
+
+@media screen and (min-width: 1281px) {
+  nav {
+    width: 25vw;
+  }
+}
+
 .center {
   display: flex;
   flex-flow: row nowrap;
@@ -27,15 +39,14 @@ nav {
   flex-flow: row nowrap;
   justify-content: space-around;
 
-  padding: 15px;
-  line-height: 3em;
-  width: 50vw;
+  padding: 1rem;
+  line-height: 3rem;
 }
 
 nav a {
   text-decoration: none;
   font-weight: bold;
-  font-size: 1em;
+  font-size: 1rem;
   color: #767676;
 
   transition: 0.2s;

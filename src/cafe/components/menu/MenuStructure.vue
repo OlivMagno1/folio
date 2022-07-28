@@ -1,9 +1,15 @@
 <template>
-  <div class="container">
+  <div class="MenuBarDesktop">
     <box-icon name="coffee" type="logo" color="#916047"></box-icon>
     <MenuNav />
     <button>
       <a href="/index">Voltar</a>
+    </button>
+  </div>
+  <div class="MenuBarMobile">
+    <box-icon name="coffee" type="logo" color="#916047"></box-icon>
+    <button>
+      <a href="/index">items</a>
     </button>
   </div>
 </template>
@@ -21,24 +27,47 @@ export default {
 
 <style scoped>
 @media screen and (max-width: 800px) {
-  .container {
+  .MenuBarDesktop {
     visibility: hidden;
+  }
+
+  .MenuBarMobile {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    visibility: visible;
+
+    position: fixed;
+    width: 90vw;
+    height: 8.5vh;
+    margin-left: 5vw;
+    margin-right: 5vw;
+
+    backdrop-filter: blur(50px) grayscale(30%);
   }
 }
 
-.container {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
-  align-items: center;
+@media screen and (min-width: 801px) {
+  .MenuBarDesktop {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    visibility: visible;
 
-  position: fixed;
-  width: 90vw;
-  height: 8.5vh;
-  margin-left: 5vw;
-  margin-right: 5vw;
+    position: fixed;
+    width: 90vw;
+    height: 8.5vh;
+    margin-left: 5vw;
+    margin-right: 5vw;
 
-  backdrop-filter: blur(50px) grayscale(30%);
+    backdrop-filter: blur(50px) grayscale(30%);
+  }
+
+  .MenuBarMobile {
+    visibility: hidden;
+  }
 }
 
 button {
