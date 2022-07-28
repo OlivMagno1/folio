@@ -3,12 +3,18 @@ import CafeView from "@/cafe/views/CafeView.vue";
 import ExpressoView from "@/cafe/views/ExpressoView.vue";
 import FrapuccinoView from "@/cafe/views/FrapuccinoView.vue";
 import CapuccinoView from "@/cafe/views/CapuccinoView.vue";
+import AboutCafe from "@/cafe/views/AboutCafe.vue";
 
 const routes = [
   {
     path: "/cafe/",
     name: "tour",
     component: CafeView,
+  },
+  {
+    path: "/aboutcafe/",
+    name: "about",
+    component: AboutCafe,
   },
   {
     path: "/cafe/expresso",

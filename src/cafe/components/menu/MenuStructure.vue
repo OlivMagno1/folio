@@ -3,13 +3,13 @@
     <box-icon name="coffee" type="logo" color="#916047"></box-icon>
     <MenuNav />
     <button>
-      <a href="/index">Voltar</a>
+      <router-link to="/aboutcafe/">Sobre este projeto</router-link>
     </button>
   </div>
   <div class="MenuBarMobile">
     <box-icon name="coffee" type="logo" color="#916047"></box-icon>
     <button>
-      <a href="/index">items</a>
+      <router-link to="/aboutcafe/">Sobre este projeto</router-link>
     </button>
   </div>
 </template>
