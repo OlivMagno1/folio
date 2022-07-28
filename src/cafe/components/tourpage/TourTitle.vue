@@ -63,8 +63,8 @@ export default {
 }
 
 .imagecontainer {
-  width: 62vw;
-  height: 70vh;
+  width: 64vw;
+  height: 38vw;
   margin-top: 8vh;
   margin-bottom: 8vh;
   display: flex;
@@ -72,14 +72,14 @@ export default {
   align-items: center;
   background-color: #f0ece9;
 
-  border-radius: 20px;
+  border-radius: 2rem;
 }
 
 img {
-  width: 40vw;
-  height: 50vh;
+  width: 48vw;
+  height: 30vw;
   object-fit: cover;
-  border-radius: 20px;
+  border-radius: 2rem;
 }
 
 .titlecard {
