@@ -26,7 +26,7 @@ export default {
 </script>
 
 <style scoped>
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 800px) {
   .container {
     display: flex;
     flex-flow: column nowrap;
@@ -67,7 +67,7 @@ export default {
   }
 }
 
-@media screen and (min-width: 721px) {
+@media screen and (min-width: 801px) {
   .container {
     display: flex;
     flex-flow: column nowrap;

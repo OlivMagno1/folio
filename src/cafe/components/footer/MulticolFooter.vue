@@ -182,13 +182,15 @@ button {
   margin-right: 0.5rem;
 
   background-color: #916047;
-  color: #ffffff;
-
-  font-family: LabGrotesque, Helvetica, Arial, sans-serif;
-  font-size: 1rem;
-  font-weight: 700;
-
   transition: 0.2s;
+}
+
+button a {
+  font-family: LabGrotesque, Helvetica, Arial, sans-serif;
+  font-size: 1.2em;
+  font-weight: 700;
+  color: #ffffff;
+  text-decoration: none;
 }
 
 button:hover {

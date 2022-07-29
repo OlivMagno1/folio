@@ -1,21 +1,28 @@
 <template>
   <div class="MenuBarDesktop">
-    <button class="emptyButton">
+    <router-link to="/cafe/" class="logo">
       <i class="fa-solid fa-mug-saucer"></i>
-    </button>
+    </router-link>
     <MenuNav />
     <button>
       <router-link to="/aboutcafe/">Sobre este projeto</router-link>
     </button>
   </div>
   <div class="MenuBarMobile">
-    <button class="emptyButton">
+    <router-link to="/cafe/" class="logo">
       <i class="fa-solid fa-mug-saucer"></i>
+    </router-link>
+    <button @click="show = !show" class="emptyButton">
+      <Transition name="fade">
+        <i v-if="!show" class="fa-solid fa-bars icon"></i>
+      </Transition>
+      <Transition name="fade">
+        <i v-if="show" class="fa-solid fa-plus icon"></i>
+      </Transition>
     </button>
-    <button v-on:click="show = show + 1" class="emptyButton">
-      <p>{{ show }}</p>
-    </button>
-    <CollapsableMenuNav v-if="show" />
+    <Transition name="slide">
+      <CollapsableMenuNav v-if="show" @click="show = false" />
+    </Transition>
   </div>
 </template>
 
@@ -29,17 +36,16 @@ export default {
     MenuNav,
     CollapsableMenuNav,
   },
-  setup() {
-    const show = 0;
+  data() {
     return {
-      show,
+      show: false,
     };
   },
 };
 </script>
 
 <style scoped>
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 960px) {
   .MenuBarDesktop {
     visibility: hidden;
   }
@@ -57,9 +63,37 @@ export default {
 
     backdrop-filter: blur(50px) grayscale(30%);
   }
+
+  .slide-enter-active {
+    transition: all 0.3s ease-out;
+  }
+
+  .slide-leave-active {
+    transform: translateY(-1em);
+  }
+
+  .slide-enter-from,
+  .slide-leave-to {
+    transform: translateY(-1em);
+    opacity: 0;
+  }
+
+  .fade-enter-active,
+  .fade-leave-active {
+    transition: opacity 1s ease;
+  }
+
+  .fade-enter-from,
+  .fade-leave-to {
+    opacity: 0;
+  }
+
+  .icon {
+    position: absolute;
+  }
 }
 
-@media screen and (min-width: 801px) {
+@media screen and (min-width: 961px) {
   .MenuBarDesktop {
     display: flex;
     flex-flow: row nowrap;
@@ -82,7 +116,7 @@ export default {
 }
 
 button {
-  width: 10rem;
+  width: 13rem;
   height: 3rem;
   border-radius: 1.5rem;
   border: 0;
@@ -93,6 +127,11 @@ button {
 }
 
 .emptyButton {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   width: 3rem;
   height: 3rem;
   border-radius: 1.5rem;
@@ -101,6 +140,15 @@ button {
   margin: 0 1.25rem;
 
   cursor: pointer;
+}
+
+a {
+  font-family: LabGrotesque, Helvetica, Arial, sans-serif;
+  font-size: 1.2em;
+  font-weight: 700;
+  color: #916047;
+  text-decoration: none;
+  margin: 0 1.25rem;
 }
 
 button a {

@@ -14,7 +14,7 @@
 <style scoped>
 @media screen and (max-width: 1280px) {
   nav {
-    width: 50vw;
+    width: 40vw;
   }
 }
 
