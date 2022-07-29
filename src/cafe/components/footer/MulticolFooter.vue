@@ -6,33 +6,30 @@
       <p>Nenhum direito reservado</p>
     </div>
     <div class="colB">
-      <h3>About</h3>
-      <router-link to="/download">Download</router-link>
-      <router-link to="/overview">Overview</router-link>
-      <router-link to="/examples">Examples</router-link>
-      <router-link to="/blog">Blog</router-link>
+      <h3>Páginas</h3>
+      <router-link to="/cafe">Home</router-link>
+      <router-link to="/cafe/expresso">Expresso</router-link>
+      <router-link to="/cafe/capuccino">Capuccino</router-link>
+      <router-link to="/cafe/frapuccino">Frapuccino</router-link>
     </div>
     <div class="colB">
-      <h3>Resources</h3>
-      <router-link to="/help">Help</router-link>
-      <router-link to="/tour">Tour</router-link>
-      <p>Contact</p>
-      <p>Privacy</p>
+      <h3>Sobre</h3>
+      <router-link to="/aboutcafe">Sobre este projeto</router-link>
     </div>
     <div class="colC">
       <button>
         <a href="https://google.com" target="_blank">
-          <box-icon name="google" type="logo" color="#ffffff"></box-icon>
+          <i class="fa-brands fa-google"></i>
         </a>
       </button>
       <button>
         <a href="https://twitter.com" target="_blank">
-          <box-icon name="twitter" type="logo" color="#ffffff"></box-icon>
+          <i class="fa-brands fa-twitter"></i>
         </a>
       </button>
       <button>
         <a href="https://youtube.com" target="_blank">
-          <box-icon name="youtube" type="logo" color="#ffffff"></box-icon>
+          <i class="fa-brands fa-youtube"></i>
         </a>
       </button>
     </div>
