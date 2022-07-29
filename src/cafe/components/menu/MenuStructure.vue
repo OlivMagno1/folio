@@ -1,26 +1,39 @@
 <template>
   <div class="MenuBarDesktop">
-    <box-icon name="coffee" type="logo" color="#916047"></box-icon>
+    <button class="emptyButton">
+      <i class="fa-solid fa-mug-saucer"></i>
+    </button>
     <MenuNav />
     <button>
       <router-link to="/aboutcafe/">Sobre este projeto</router-link>
     </button>
   </div>
   <div class="MenuBarMobile">
-    <box-icon name="coffee" type="logo" color="#916047"></box-icon>
-    <button>
-      <router-link to="/aboutcafe/">Sobre este projeto</router-link>
+    <button class="emptyButton">
+      <i class="fa-solid fa-mug-saucer"></i>
     </button>
+    <button v-on:click="show = show + 1" class="emptyButton">
+      <p>{{ show }}</p>
+    </button>
+    <CollapsableMenuNav v-if="show" />
   </div>
 </template>
 
 <script>
 import MenuNav from "./MenuNav.vue";
+import CollapsableMenuNav from "./CollapsableMenuNav.vue";
 
 export default {
   name: "MenuStructure",
   components: {
     MenuNav,
+    CollapsableMenuNav,
+  },
+  setup() {
+    const show = 0;
+    return {
+      show,
+    };
   },
 };
 </script>
@@ -39,10 +52,8 @@ export default {
     visibility: visible;
 
     position: fixed;
-    width: 90vw;
+    width: 100vw;
     height: 8.5vh;
-    margin-left: 5vw;
-    margin-right: 5vw;
 
     backdrop-filter: blur(50px) grayscale(30%);
   }
@@ -71,14 +82,25 @@ export default {
 }
 
 button {
-  width: 10em;
-  height: 3em;
-  border-radius: 30px;
+  width: 10rem;
+  height: 3rem;
+  border-radius: 1.5rem;
   border: 0;
 
   background-color: #916047;
 
   transition: 0.2s;
+}
+
+.emptyButton {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 1.5rem;
+  background-color: #fafafa;
+  border: 0;
+  margin: 0 1.25rem;
+
+  cursor: pointer;
 }
 
 button a {
