@@ -128,21 +128,21 @@ export default {
 
   .colA {
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     align-items: flex-start;
     margin: 0.75rem 0;
   }
 
   .colB {
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     align-items: flex-start;
     margin: 0.75rem 0;
   }
 
   .colC {
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     align-items: flex-start;
     margin: 0.75rem;
   }
@@ -169,6 +169,7 @@ export default {
     font-size: 1.2rem;
     font-weight: 700;
     margin: 0 0.75rem;
+    padding-right: 70vw;
   }
 }
 
@@ -177,8 +178,8 @@ a:hover {
 }
 
 button {
-  width: 1.75rem;
-  height: 1.75rem;
+  width: 3rem;
+  height: 3rem;
   border-radius: 50%;
   border: 0;
   margin-right: 0.5rem;
@@ -187,7 +188,7 @@ button {
   color: #ffffff;
 
   font-family: LabGrotesque, Helvetica, Arial, sans-serif;
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: 700;
 
   transition: 0.2s;
