@@ -46,87 +46,148 @@ export default {
 </script>
 
 <style scoped>
-.container {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-evenly;
-  align-items: flex-start;
+@media screen and (min-width: 721px) {
+  .container {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
 
-  width: 70vw;
-  padding-top: 17vh;
-  margin-top: 10vh;
-  margin-left: 15vw;
-  margin-right: 15vw;
-  margin-bottom: 15vh;
-  border-top: 1px solid #cfcbc8;
+    width: 70vw;
+    padding-top: 17vh;
+    margin-top: 10vh;
+    margin-left: 15vw;
+    margin-right: 15vw;
+    margin-bottom: 15vh;
+    border-top: 1px solid #cfcbc8;
+  }
+
+  .colA {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+
+    height: 25vh;
+    width: 16vw;
+  }
+
+  .colB {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+
+    height: 25vh;
+    width: 12vw;
+  }
+
+  .colC {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: flex-start;
+    height: 25vh;
+    width: 12vw;
+  }
+
+  .colB a {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 1em;
+    color: #333;
+    margin-bottom: 0.75rem;
+
+    transition: 0.2s;
+  }
+
+  p {
+    font-family: LabGrotesque, Helvetica, Arial, sans-serif;
+    font-size: 1em;
+    font-weight: 400;
+    margin-bottom: 0.75rem;
+  }
+
+  h3 {
+    font-family: LabGrotesque, Helvetica, Arial, sans-serif;
+    font-size: 1.2em;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+  }
 }
 
-p {
-  font-family: LabGrotesque, Helvetica, Arial, sans-serif;
-  font-size: 1em;
-  font-weight: 400;
-  margin-bottom: 0.75em;
-}
+@media screen and (max-width: 720px) {
+  .container {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
 
-h3 {
-  font-family: LabGrotesque, Helvetica, Arial, sans-serif;
-  font-size: 1.2em;
-  font-weight: 700;
-  margin-bottom: 0.75em;
+    width: 70vw;
+    padding-top: 5vh;
+    margin: 5vh 5vw;
+    border-top: 1px solid #cfcbc8;
+  }
+
+  .colA {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: flex-start;
+    margin: 0.75rem 0;
+  }
+
+  .colB {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: flex-start;
+    margin: 0.75rem 0;
+  }
+
+  .colC {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: flex-start;
+    margin: 0.75rem;
+  }
+
+  .colB a {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 1em;
+    color: #333;
+    margin: 0 0.75rem;
+
+    transition: 0.2s;
+  }
+
+  p {
+    font-family: LabGrotesque, Helvetica, Arial, sans-serif;
+    font-size: 1em;
+    font-weight: 400;
+    margin: 0 0.75rem;
+  }
+
+  h3 {
+    font-family: LabGrotesque, Helvetica, Arial, sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin: 0 0.75rem;
+  }
 }
 
 a:hover {
   transform: scale(1.1);
 }
 
-.colA {
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: flex-start;
-
-  height: 25vh;
-  width: 16vw;
-}
-
-.colB {
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: flex-start;
-
-  height: 25vh;
-  width: 12vw;
-}
-
-.colB a {
-  text-decoration: none;
-  font-weight: 400;
-  font-size: 1em;
-  color: #333;
-  margin-bottom: 0.75em;
-
-  transition: 0.2s;
-}
-
-.colC {
-  display: flex;
-  flex-flow: row nowrap;
-  align-items: flex-start;
-  height: 25vh;
-  width: 12vw;
-}
-
 button {
-  width: 1.75em;
-  height: 1.75em;
+  width: 1.75rem;
+  height: 1.75rem;
   border-radius: 50%;
   border: 0;
-  margin-right: 0.5em;
+  margin-right: 0.5rem;
 
   background-color: #916047;
   color: #ffffff;
 
   font-family: LabGrotesque, Helvetica, Arial, sans-serif;
-  font-size: 1.5em;
+  font-size: 1.5rem;
   font-weight: 700;
 
   transition: 0.2s;

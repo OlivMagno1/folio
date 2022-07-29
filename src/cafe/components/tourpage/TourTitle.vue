@@ -26,7 +26,32 @@ export default {
 </script>
 
 <style scoped>
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 720px) {
+  .container {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+
+    width: 90vw;
+    margin-top: 12vh;
+    margin-left: 5vw;
+    margin-right: 5vw;
+  }
+
+  .imagecontainer {
+    width: 64vw;
+    height: 38vw;
+    margin-top: 8vh;
+    margin-bottom: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0ece9;
+
+    border-radius: 2rem;
+  }
+
   h2 {
     font-size: 3rem;
     margin: 0.5rem;
@@ -36,9 +61,38 @@ export default {
     font-size: 1rem;
     font-weight: 400;
   }
+
+  .titlecard {
+    width: 90vw;
+  }
 }
 
-@media screen and (min-width: 651px) {
+@media screen and (min-width: 721px) {
+  .container {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+
+    width: 90vw;
+    margin-top: 12vh;
+    margin-left: 5vw;
+    margin-right: 5vw;
+  }
+
+  .imagecontainer {
+    width: 64vw;
+    height: 38vw;
+    margin-top: 8vh;
+    margin-bottom: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0ece9;
+
+    border-radius: 2rem;
+  }
+
   h2 {
     font-size: 5em;
     margin: 0.5em;
@@ -48,31 +102,10 @@ export default {
     font-size: 2em;
     font-weight: 400;
   }
-}
 
-.container {
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: space-evenly;
-  align-items: center;
-
-  width: 90vw;
-  margin-top: 12vh;
-  margin-left: 5vw;
-  margin-right: 5vw;
-}
-
-.imagecontainer {
-  width: 64vw;
-  height: 38vw;
-  margin-top: 8vh;
-  margin-bottom: 8vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #f0ece9;
-
-  border-radius: 2rem;
+  .titlecard {
+    width: 40vw;
+  }
 }
 
 img {
@@ -80,10 +113,6 @@ img {
   height: 30vw;
   object-fit: cover;
   border-radius: 2rem;
-}
-
-.titlecard {
-  width: 40vw;
 }
 
 .textHighlight {
