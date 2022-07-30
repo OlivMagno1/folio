@@ -3,7 +3,7 @@
     <router-link to="/cafe/">Home</router-link>
     <router-link to="/cafe/expresso">Expresso</router-link>
     <router-link to="/cafe/latte">Latte</router-link>
-    <router-link to="/cafe/frapuccino">Frapuccino</router-link>
+    <router-link to="/cafe/frappuccino">Frappuccino</router-link>
     <button>
       <router-link to="/aboutcafe/">Sobre este projeto</router-link>
     </button>

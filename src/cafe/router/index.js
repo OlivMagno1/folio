@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory } from "vue-router";
 import CafeView from "@/cafe/views/CafeView.vue";
 import ExpressoView from "@/cafe/views/ExpressoView.vue";
-import FrapuccinoView from "@/cafe/views/FrapuccinoView.vue";
+import FrappuccinoView from "@/cafe/views/FrappuccinoView.vue";
 import LatteView from "@/cafe/views/LatteView.vue";
 import AboutCafe from "@/cafe/views/AboutCafe.vue";
 
@@ -27,9 +27,9 @@ const routes = [
     component: LatteView,
   },
   {
-    path: "/cafe/frapuccino",
-    name: "frapuccino",
-    component: FrapuccinoView,
+    path: "/cafe/frappuccino",
+    name: "frappuccino",
+    component: FrappuccinoView,
   },
 ];
 

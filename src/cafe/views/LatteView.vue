@@ -2,19 +2,17 @@
   <div class="expressoContainer">
     <div class="headline">
       <div class="textTitle">
-        <h1>
-          Uma dose concentrada de <span class="textHighlight">cafeína</span>
-        </h1>
-        <p>O punch perfeito para levantar a moral</p>
+        <h1>Mais que <span class="textHighlight">café</span></h1>
+        <p>Tudo o que você precisa no seu dia</p>
       </div>
-      <img src="@/cafe/assets/images/expresso.jpg" />
+      <img src="@/cafe/assets/images/latte.jpg" />
     </div>
     <div class="textParagraph">
       <p>
-        Um café expresso bem tirado possui três partes principais: coração,
-        corpo e espuma — sua característica mais marcante: a espuma de cor
-        semelhante ao <span class="textHighlight">caramelo-escuro</span> que
-        permanece sobre a superfície do expresso.
+        Conhecido como Café au lait na França e como pingado no Brasil, o Latte
+        traz toda a energia de um expresso em conjunto com o conforto de uma
+        generosa espuma de leite, adicionada especificamente para aquecer o
+        coração.
       </p>
     </div>
   </div>
@@ -100,11 +98,12 @@ export default {
 
   h1 {
     font-size: 3rem;
+    margin: 1rem;
   }
 
   img {
-    width: 20vw;
-    height: 20vw;
+    width: 24vw;
+    height: 16vw;
     object-fit: cover;
     border-radius: 2rem;
   }
