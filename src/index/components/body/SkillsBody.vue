@@ -74,31 +74,34 @@ export default {
 }
 
 .skillCards {
-  width: 90px;
-  height: 90px;
+  min-width: 5rem;
+  max-width: 5rem;
+  min-height: 5rem;
+  max-height: 5rem;
 
   display: flex;
+  flex: 1;
   flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
 
   background-color: #51011d;
-  margin: 10px;
+  margin: 1rem;
   border-radius: 50%;
   transition: 0.2s;
 }
 
 p {
   font-family: Archivo, sans-serif;
-  font-size: 700;
+  font-size: 1rem;
   color: #f7dfb2;
-  margin: 15px;
+  margin: 1rem;
   cursor: default;
 }
 
 i {
   color: #f7dfb2;
-  margin: 15px;
+  margin: 1rem;
 }
 
 .fade-enter-active,
