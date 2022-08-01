@@ -32,6 +32,33 @@ export default {
 </script>
 
 <style scoped>
+@media screen and (max-width: 960px) {
+  .textbox {
+    display: flex;
+    flex-flow: column nowrap;
+
+    justify-content: center;
+    align-items: flex-start;
+
+    margin-top: 12vh;
+    width: 95vw;
+    height: 88vh;
+  }
+}
+
+@media screen and (min-width: 961px) {
+  .textbox {
+    display: flex;
+    flex-flow: column nowrap;
+
+    justify-content: center;
+    align-items: flex-start;
+
+    margin-top: 12vh;
+    width: 50vw;
+    height: 88vh;
+  }
+}
 .container {
   display: flex;
   flex-flow: column nowrap;
@@ -41,18 +68,6 @@ export default {
   width: 100vw;
 
   background-color: #f7dfb2;
-}
-
-.textbox {
-  display: flex;
-  flex-flow: column nowrap;
-
-  justify-content: center;
-  align-items: flex-start;
-
-  margin-top: 12vh;
-  width: 50vw;
-  height: 88vh;
 }
 
 h1 {
