@@ -1,9 +1,11 @@
 <template>
-  <h1>Portfolio</h1>
-  <div v-for="(slide, index) in carouselSlides" :key="index">
-    <a :href="getPage(index)" target="_blank">
-      <img :src="require(`@/index/assets/images/${slide}.png`)" />
-    </a>
+  <div class="portfolioCardsContainer">
+    <h1>Portfolio</h1>
+    <div v-for="(slide, index) in carouselSlides" :key="index">
+      <a :href="getPage(index)" target="_blank">
+        <img :src="require(`@/index/assets/images/${slide}.png`)" />
+      </a>
+    </div>
   </div>
 </template>
 
@@ -12,7 +14,7 @@ export default {
   name: "PortfolioMobile",
 
   setup() {
-    const carouselSlides = ["plataforma", "cafe"];
+    const carouselSlides = ["cafeMobile", "cafeMobile"];
     const pageList = ["/plataforma", "/cafe"];
 
     const getPage = (index) => {
@@ -24,17 +26,26 @@ export default {
 </script>
 
 <style scoped>
+.portfolioCardsContainer {
+  width: 90vw;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+
 img {
-  width: 80vw;
+  width: 30vw;
+  margin-bottom: 5vh;
 }
 
 h1 {
   margin-top: 10vh;
+  margin-bottom: 5vh;
   font-size: 6em;
   width: 90vw;
   text-align: left;
   font-weight: 700;
 
-  color: #a85710;
+  color: #28000e;
 }
 </style>
