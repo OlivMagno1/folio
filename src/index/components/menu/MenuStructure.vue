@@ -1,7 +1,9 @@
 <template>
   <div class="container">
     <h1><span>Magno</span> Oliveira</h1>
-    <MenuNav />
+    <div class="showPages">
+      <MenuNav />
+    </div>
     <MenuButtonBar />
   </div>
 </template>
@@ -21,12 +23,33 @@ export default {
 </script>
 
 <style scoped>
-.container {
-  display: flex;
-  flex-flow: row nowrap;
-  align-items: center;
-  justify-content: center;
+@media screen and (max-width: 960px) {
+  .container {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+  }
 
+  .showPages {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 961px) {
+  .container {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .showPages {
+    display: block;
+  }
+}
+
+.container {
   height: 12vh;
   width: 100vw;
   position: fixed;

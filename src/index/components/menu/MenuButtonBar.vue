@@ -34,13 +34,26 @@ export default {
 </script>
 
 <style scoped>
-.buttonContainer {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-evenly;
-  align-items: center;
+@media screen and (max-width: 960px) {
+  .buttonContainer {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: center;
 
-  width: 8vw;
+    width: 35vw;
+  }
+}
+
+@media screen and (min-width: 961px) {
+  .buttonContainer {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+
+    width: 10vw;
+  }
 }
 
 a {
@@ -53,8 +66,8 @@ i {
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  width: 40px;
-  height: 40px;
+  width: 3rem;
+  height: 3rem;
   background-color: #f7dfb2;
   color: #a85710;
   transition: 0.2s;

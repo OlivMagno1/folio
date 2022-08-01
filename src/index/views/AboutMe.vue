@@ -17,16 +17,21 @@
       </Transition>
       <SkillsBody />
     </div>
+    <div class="portfolioMobileContainer">
+      <PortfolioMobile />
+    </div>
   </div>
 </template>
 
 <script>
+import PortfolioMobile from "../components/body/PortfolioMobile.vue";
 import SkillsBody from "@/index/components/body/SkillsBody.vue";
 
 export default {
   name: "AboutMe",
   components: {
     SkillsBody,
+    PortfolioMobile,
   },
 };
 </script>
@@ -40,9 +45,13 @@ export default {
     justify-content: center;
     align-items: flex-start;
 
-    margin-top: 12vh;
-    width: 95vw;
+    margin-top: 15vh;
+    width: 90vw;
     height: 88vh;
+  }
+
+  .portfolioMobileContainer {
+    display: block;
   }
 }
 
@@ -58,6 +67,16 @@ export default {
     width: 50vw;
     height: 88vh;
   }
+
+  .portfolioMobileContainer {
+    display: none;
+  }
+}
+
+h1 {
+  font-size: 5em;
+  color: #28000e;
+  cursor: default;
 }
 .container {
   display: flex;
@@ -65,15 +84,7 @@ export default {
   justify-content: center;
   align-items: center;
 
-  width: 100vw;
-
   background-color: #f7dfb2;
-}
-
-h1 {
-  font-size: 5em;
-  color: #28000e;
-  cursor: default;
 }
 
 h2 {

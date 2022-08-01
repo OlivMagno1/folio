@@ -1,8 +1,6 @@
 <template>
   <div>
-    <div class="menuDesktop">
-      <MenuStructure />
-    </div>
+    <MenuStructure />
     <router-view />
   </div>
 </template>
@@ -22,18 +20,6 @@ export default {
 <style>
 * {
   margin: 0;
-}
-
-@media screen and (max-width: 960px) {
-  .menuDesktop {
-    visibility: hidden;
-  }
-}
-
-@media screen and (min-width: 961px) {
-  .menuDesktop {
-    visibility: visible;
-  }
 }
 
 @font-face {
@@ -59,6 +45,5 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #037971;
 }
 </style>
