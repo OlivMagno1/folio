@@ -27,8 +27,8 @@ export default {
 @media screen and (max-width: 960px) {
   .container {
     width: 100vw;
-    height: 50vh;
-    background-color: #ffffff;
+    height: 30vh;
+    background-color: #fff;
 
     display: flex;
     flex-flow: column nowrap;
@@ -53,6 +53,6 @@ export default {
 }
 
 .text {
-  height: 26vh;
+  height: 15vh;
 }
 </style>

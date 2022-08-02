@@ -2,7 +2,7 @@
   <div class="container">
     <div class="text">
       <h2>
-        Acreditamos que é necessário foco para criar aplicações potentes. <br />
+        Acreditamos que é necessário foco para criar aplicações potentes.
         Trabalhamos com poucos produtos, e estamos concentrados em entregar a
         melhor experiência.
       </h2>
@@ -25,7 +25,7 @@ export default {
 @media screen and (max-width: 960px) {
   .container {
     width: 100vw;
-    height: 50vh;
+    height: 30vh;
     background-color: #ffffff;
 
     display: flex;
@@ -51,6 +51,6 @@ export default {
 }
 
 .text {
-  height: 24vh;
+  height: 15vh;
 }
 </style>

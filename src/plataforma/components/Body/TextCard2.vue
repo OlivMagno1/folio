@@ -25,7 +25,7 @@ export default {
 @media screen and (max-width: 960px) {
   .container {
     width: 100vw;
-    height: 50vh;
+    height: 30vh;
     background-color: #ffffff;
 
     display: flex;
@@ -51,6 +51,6 @@ export default {
 }
 
 .text {
-  height: 22vh;
+  height: 15vh;
 }
 </style>

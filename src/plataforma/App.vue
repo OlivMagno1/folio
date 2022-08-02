@@ -32,11 +32,11 @@ export default {
 
 @media screen and (max-width: 960px) {
   h2 {
-    font-size: 1.25rem;
+    font-size: 0.9rem;
   }
 
   p {
-    font-size: 0.9rem;
+    font-size: 0.6rem;
   }
 }
 

@@ -2,13 +2,26 @@
   <div class="container">
     <div class="videocrop">
       <iframe
-        width="640"
-        height="480"
+        width="320"
+        height="240"
         src="https://www.youtube.com/embed/5s8fs_j2xlY"
         title="YouTube video player"
         frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen
+        class="videoMobile"
+      >
+      </iframe>
+
+      <iframe
+        width="1280"
+        height="720"
+        src="https://www.youtube.com/embed/5s8fs_j2xlY"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+        class="videoDesktop"
       >
       </iframe>
     </div>
@@ -25,13 +38,21 @@ export default {
 @media screen and (max-width: 960px) {
   .container {
     width: 100vw;
-    height: 60vh;
+    height: 30vh;
     background-color: #ffffff;
 
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
     justify-content: center;
+  }
+
+  .videoMobile {
+    display: block;
+  }
+
+  .videoDesktop {
+    display: none;
   }
 }
 
@@ -49,6 +70,14 @@ export default {
     flex-flow: row nowrap;
     align-items: center;
     justify-content: space-evenly;
+  }
+
+  .videoMobile {
+    display: none;
+  }
+
+  .videoDesktop {
+    display: block;
   }
 }
 </style>

@@ -2,8 +2,8 @@
   <div class="container">
     <div class="text">
       <h2>
-        Somos apaixonados por quem somos hoje. <br />
-        Mas estamos sempre buscando melhorar.
+        Somos apaixonados por quem somos hoje. Mas estamos sempre buscando
+        melhorar.
       </h2>
       <p>
         Trabalhamos duro para criar um ambiente saudável, onde todos podemos
@@ -28,7 +28,7 @@ export default {
 @media screen and (max-width: 960px) {
   .container {
     width: 100vw;
-    height: 50vh;
+    height: 30vh;
     background-color: #ffffff;
 
     display: flex;
@@ -53,6 +53,6 @@ export default {
   }
 }
 .text {
-  height: 26vh;
+  height: 15vh;
 }
 </style>

@@ -2,9 +2,8 @@
   <div class="container">
     <div class="text">
       <h2>
-        Ir até onde você deseja nem sempre é fácil. <br />
-        É necessário tempo, dinheiro e energia. <br />
-        Porém quando é possível, é extremamente recompensador.
+        Ir até onde você deseja nem sempre é fácil. É necessário tempo, dinheiro
+        e energia. Porém quando é possível, é extremamente recompensador.
       </h2>
       <p>
         Nós entendemos. E é por isso que Plataforma facilita o transporte dos
@@ -25,7 +24,7 @@ export default {
 @media screen and (max-width: 960px) {
   .container {
     width: 100vw;
-    height: 50vh;
+    height: 30vh;
     background-color: #ffffff;
 
     display: flex;
@@ -51,6 +50,6 @@ export default {
 }
 
 .text {
-  height: 24vh;
+  height: 15vh;
 }
 </style>

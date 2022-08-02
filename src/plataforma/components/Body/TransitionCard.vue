@@ -19,7 +19,7 @@ export default {
 @media screen and (max-width: 960px) {
   .container {
     width: 100vw;
-    height: 60vh;
+    height: 30vh;
     background-image: linear-gradient(to right, #ffffff 40%, #fbffa7 40%);
 
     display: flex;

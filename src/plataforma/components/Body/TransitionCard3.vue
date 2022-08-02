@@ -17,17 +17,32 @@ export default {
 </script>
 
 <style scoped>
-.container {
-  width: 84vw;
-  height: 100vh;
-  margin-left: 8vw;
-  margin-right: 8vw;
-  background-image: linear-gradient(to right, #b6ffc0 60%, #ffffff 60%);
+@media screen and (max-width: 960px) {
+  .container {
+    width: 100vw;
+    height: 30vh;
+    background-image: linear-gradient(to right, #b6ffc0 60%, #ffffff 60%);
 
-  display: flex;
-  flex-flow: row nowrap;
-  align-items: center;
-  justify-content: space-evenly;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+}
+
+@media screen and (min-width: 961px) {
+  .container {
+    width: 84vw;
+    height: 100vh;
+    margin-left: 8vw;
+    margin-right: 8vw;
+    background-image: linear-gradient(to right, #b6ffc0 60%, #ffffff 60%);
+
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+  }
 }
 
 .imagecropleft {
@@ -38,15 +53,15 @@ export default {
 }
 
 .imagecropleft img {
-  width: 30vw;
-  height: 42vh;
+  width: 26vw;
+  height: 18vw;
   object-fit: cover;
   margin: 20px;
 }
 
 .imagecropright img {
-  width: 30vw;
-  height: 75vh;
+  width: 35vw;
+  height: 40vw;
   object-fit: cover;
 }
 </style>

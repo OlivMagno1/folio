@@ -2,9 +2,9 @@
   <div class="container">
     <div class="text">
       <h2>
-        Queremos que nossos empregados amem trabalhar aqui <br />
-        Como estamos sempre buscando talentos de todos os lugares do mundo,
-        queremos fazer o possível para reduzir as barreiras.
+        Queremos que nossos empregados amem trabalhar aqui. Como estamos sempre
+        buscando talentos de todos os lugares do mundo, queremos fazer o
+        possível para reduzir as barreiras.
       </h2>
       <p>
         Se você é estrangeiro, oferecemos auxílios de imigração e com a
@@ -28,7 +28,7 @@ export default {
 @media screen and (max-width: 960px) {
   .container {
     width: 100vw;
-    height: 50vh;
+    height: 30vh;
     background-color: #ffffff;
 
     display: flex;
@@ -54,6 +54,6 @@ export default {
 }
 
 .text {
-  height: 30vh;
+  height: 15vh;
 }
 </style>
