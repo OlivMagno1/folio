@@ -9,8 +9,8 @@
       <h3>Páginas</h3>
       <router-link to="/cafe">Home</router-link>
       <router-link to="/cafe/expresso">Expresso</router-link>
-      <router-link to="/cafe/capuccino">Capuccino</router-link>
-      <router-link to="/cafe/frapuccino">Frapuccino</router-link>
+      <router-link to="/cafe/latte">Latte</router-link>
+      <router-link to="/cafe/frappuccino">Frappuccino</router-link>
     </div>
     <div class="colB">
       <h3>Sobre</h3>
