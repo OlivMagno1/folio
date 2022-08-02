@@ -3,7 +3,7 @@
     <h1>Portfolio</h1>
     <div v-for="(slide, index) in carouselSlides" :key="index">
       <a :href="getPage(index)" target="_blank">
-        <img :src="require(`@/index/assets/images/${slide}.png`)" />
+        <img :src="require(`@/index/assets/images/${slide}.jpg`)" />
       </a>
     </div>
   </div>
@@ -14,7 +14,7 @@ export default {
   name: "PortfolioMobile",
 
   setup() {
-    const carouselSlides = ["cafeMobile", "cafeMobile"];
+    const carouselSlides = ["plataformaMobile", "cafeMobile"];
     const pageList = ["/plataforma", "/cafe"];
 
     const getPage = (index) => {
