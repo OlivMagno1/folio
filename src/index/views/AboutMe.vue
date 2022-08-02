@@ -47,11 +47,32 @@ export default {
 
     margin-top: 15vh;
     width: 90vw;
-    height: 88vh;
+    height: 60vh;
   }
 
   .portfolioMobileContainer {
     display: block;
+  }
+
+  h1 {
+    font-size: 2em;
+    color: #28000e;
+    cursor: default;
+  }
+
+  h2 {
+    font-size: 1.5em;
+    color: #28000e;
+    margin: 0.5em;
+    cursor: default;
+  }
+
+  p {
+    font-size: 1.2em;
+    color: #28000e;
+    margin: 0.5em;
+    text-align: justify;
+    cursor: default;
   }
 }
 
@@ -71,13 +92,29 @@ export default {
   .portfolioMobileContainer {
     display: none;
   }
+
+  h1 {
+    font-size: 5em;
+    color: #28000e;
+    cursor: default;
+  }
+
+  h2 {
+    font-size: 3em;
+    color: #28000e;
+    margin: 0.5em;
+    cursor: default;
+  }
+
+  p {
+    font-size: 2em;
+    color: #28000e;
+    margin: 0.5em;
+    text-align: justify;
+    cursor: default;
+  }
 }
 
-h1 {
-  font-size: 5em;
-  color: #28000e;
-  cursor: default;
-}
 .container {
   display: flex;
   flex-flow: column nowrap;
@@ -85,21 +122,6 @@ h1 {
   align-items: center;
 
   background-color: #f7dfb2;
-}
-
-h2 {
-  font-size: 3em;
-  color: #28000e;
-  margin: 0.5em;
-  cursor: default;
-}
-
-p {
-  font-size: 2em;
-  color: #28000e;
-  margin: 0.5em;
-  text-align: justify;
-  cursor: default;
 }
 
 span {

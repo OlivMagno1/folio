@@ -41,7 +41,21 @@ export default {
     justify-content: space-evenly;
     align-items: center;
 
-    width: 35vw;
+    margin-right: 2vw;
+    width: 30vw;
+  }
+
+  i {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    background-color: #f7dfb2;
+    color: #a85710;
+    transition: 0.2s;
   }
 }
 
@@ -54,23 +68,23 @@ export default {
 
     width: 10vw;
   }
+
+  i {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+    background-color: #f7dfb2;
+    color: #a85710;
+    transition: 0.2s;
+  }
 }
 
 a {
   text-decoration: none;
-}
-
-i {
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  width: 3rem;
-  height: 3rem;
-  background-color: #f7dfb2;
-  color: #a85710;
-  transition: 0.2s;
 }
 
 i:hover {

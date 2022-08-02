@@ -34,6 +34,13 @@ export default {
   .showPages {
     display: none;
   }
+
+  h1 {
+    color: #a85710;
+    cursor: default;
+    font-size: 1.2rem;
+    margin-left: 2vw;
+  }
 }
 
 @media screen and (min-width: 961px) {
@@ -46,6 +53,11 @@ export default {
 
   .showPages {
     display: block;
+  }
+
+  h1 {
+    color: #a85710;
+    cursor: default;
   }
 }
 
@@ -60,10 +72,5 @@ export default {
 span {
   font-weight: 100;
   color: #f7dfb2;
-}
-
-h1 {
-  color: #a85710;
-  cursor: default;
 }
 </style>

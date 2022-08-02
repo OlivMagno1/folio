@@ -41,7 +41,7 @@ img {
 h1 {
   margin-top: 10vh;
   margin-bottom: 5vh;
-  font-size: 6em;
+  font-size: 2em;
   width: 90vw;
   text-align: left;
   font-weight: 700;
