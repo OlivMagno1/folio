@@ -17,7 +17,7 @@ export default {
 nav {
   transition: 0.2s;
   position: absolute;
-  top: 8.5vh;
+  top: 8vh;
   left: 0;
   display: flex;
   flex-flow: column nowrap;

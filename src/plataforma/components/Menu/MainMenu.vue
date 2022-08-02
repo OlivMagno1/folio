@@ -58,6 +58,15 @@ export default {
     border-bottom: 1px solid #e6e6e6;
   }
 
+  button {
+    font-family: Futura;
+    font-size: 1.2rem;
+    background-color: #fff;
+    border: 0px;
+    margin-left: 5vw;
+    cursor: pointer;
+  }
+
   .slide-enter-active {
     transition: all 0.3s ease-out;
   }
