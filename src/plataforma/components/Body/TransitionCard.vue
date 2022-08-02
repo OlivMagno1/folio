@@ -16,28 +16,43 @@ export default {
 </script>
 
 <style scoped>
-.container {
-  width: 84vw;
-  height: 100vh;
-  margin-left: 8vw;
-  margin-right: 8vw;
-  background-image: linear-gradient(to right, #ffffff 40%, #fbffa7 40%);
+@media screen and (max-width: 960px) {
+  .container {
+    width: 100vw;
+    height: 60vh;
+    background-image: linear-gradient(to right, #ffffff 40%, #fbffa7 40%);
 
-  display: flex;
-  flex-flow: row nowrap;
-  align-items: center;
-  justify-content: space-evenly;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+}
+
+@media screen and (min-width: 961px) {
+  .container {
+    width: 84vw;
+    height: 100vh;
+    margin-left: 8vw;
+    margin-right: 8vw;
+    background-image: linear-gradient(to right, #ffffff 40%, #fbffa7 40%);
+
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+  }
 }
 
 .imagecropleft img {
   width: 30vw;
-  height: 70vh;
+  height: 45vw;
   object-fit: cover;
 }
 
 .imagecropright img {
   width: 23vw;
-  height: 40vh;
+  height: 25vw;
   object-fit: cover;
 }
 </style>

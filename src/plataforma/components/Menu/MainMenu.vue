@@ -51,6 +51,12 @@ export default {
     align-items: center;
     background-color: #ffffff;
   }
+  .container {
+    width: 100vw;
+    height: 8vh;
+    justify-content: space-between;
+    border-bottom: 1px solid #e6e6e6;
+  }
 
   .slide-enter-active {
     transition: all 0.3s ease-out;
@@ -79,15 +85,15 @@ export default {
     align-items: center;
     background-color: #ffffff;
   }
-}
 
-.container {
-  width: 84vw;
-  height: 8vh;
-  margin-left: 8vw;
-  margin-right: 8vw;
-  justify-content: space-between;
-  border-bottom: 1px solid #e6e6e6;
+  .container {
+    width: 84vw;
+    height: 8vh;
+    margin-left: 8vw;
+    margin-right: 8vw;
+    justify-content: space-between;
+    border-bottom: 1px solid #e6e6e6;
+  }
 }
 
 .left {

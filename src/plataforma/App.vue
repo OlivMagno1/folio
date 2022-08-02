@@ -30,6 +30,26 @@ export default {
   margin: 0;
 }
 
+@media screen and (max-width: 960px) {
+  h2 {
+    font-size: 1.25rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (min-width: 961px) {
+  h2 {
+    font-size: 2.2rem;
+  }
+
+  p {
+    font-size: 1.5rem;
+  }
+}
+
 #app {
   font-family: "Futura", Avenir, -apple-system, BlinkMacSystemFont, "Segoe UI",
     Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -47,14 +67,6 @@ export default {
   flex-flow: column nowrap;
   justify-content: space-between;
   text-align: left;
-}
-
-h2 {
-  font-size: 2.2rem;
-}
-
-p {
-  font-size: 1.5rem;
 }
 
 .highlight {

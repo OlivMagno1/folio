@@ -13,15 +13,28 @@ export default {
 </script>
 
 <style scoped>
-.container {
-  width: 84vw;
-  margin-left: 8vw;
-  margin-right: 8vw;
-  background-color: #ffffff;
+@media screen and (max-width: 960px) {
+  .container {
+    width: 100vw;
+    background-color: #ffffff;
 
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: center;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 961px) {
+  .container {
+    width: 84vw;
+    margin-left: 8vw;
+    margin-right: 8vw;
+    background-color: #ffffff;
+
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+  }
 }
 
 .titlebg {
@@ -29,7 +42,7 @@ export default {
   background-size: cover;
   background-position: center;
   width: 70vw;
-  height: 85vh;
+  height: 44vw;
 
   display: flex;
   justify-content: center;
@@ -37,7 +50,7 @@ export default {
 }
 
 .title {
-  font-size: 10rem;
+  font-size: 4rem;
   color: #ff764d;
 }
 </style>

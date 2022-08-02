@@ -5,8 +5,7 @@
         Nós oferecemos <span class="highlight">Trens</span>,
         <span class="highlight">Onibus</span> e
         <span class="highlight">Aviões</span>
-        - Softwares de transporte <br />
-        que permitem uma movimentação rápida e segura. <br />
+        - Softwares de transporte que permitem uma movimentação rápida e segura.
         Com os nossos produtos, nossos clientes estão presentes em todo o
         planeta
       </h2>
@@ -25,16 +24,32 @@ export default {
 </script>
 
 <style scoped>
-.container {
-  width: 84vw;
-  height: 50vh;
-  margin-left: 8vw;
-  margin-right: 8vw;
-  background-color: #ffffff;
+@media screen and (max-width: 960px) {
+  .container {
+    width: 100vw;
+    height: 50vh;
+    background-color: #ffffff;
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 961px) {
+  .container {
+    width: 84vw;
+    height: 70vh;
+    margin-left: 8vw;
+    margin-right: 8vw;
+    background-color: #ffffff;
+
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 .text {
