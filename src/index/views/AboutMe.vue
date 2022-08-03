@@ -38,8 +38,7 @@ export default {
   }
 
   .textbox {
-    max-height: 64vh;
-    min-height: 100%-42vh;
+    height: 64vh;
   }
 
   h1 {

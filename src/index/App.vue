@@ -9,6 +9,16 @@
 import "boxicons";
 import MenuStructure from "./components/menu/MenuStructure.vue";
 
+//vh fix
+const documentHeight = () => {
+  const doc = document.documentElement;
+  doc.style.setProperty("--doc-height", `${window.innerHeight}px`);
+};
+
+window.addEventListener("resize", documentHeight);
+documentHeight();
+//End vh fix
+
 export default {
   name: "App",
   components: {
@@ -18,6 +28,10 @@ export default {
 </script>
 
 <style>
+:root {
+  --doc-height: 100%;
+}
+
 * {
   margin: 0;
 }
@@ -45,5 +59,6 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
+  max-height: var(--doc-height);
 }
 </style>
