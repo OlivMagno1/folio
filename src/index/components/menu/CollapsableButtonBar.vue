@@ -35,25 +35,33 @@ export default {
 
 <style scoped>
 .collapsableButtonContainer {
-  width: 40vw;
+  width: 100vw;
   position: absolute;
   top: calc(var(--doc-vh) * 6);
   right: 0;
   z-index: 500;
 
   display: flex;
-  flex-flow: column nowrap;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #51011d;
 }
 
 a {
-  padding: 2rem 0;
-  width: 40vw;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+
+  text-decoration: none;
+  height: calc(var(--doc-vh) * 6);
+  width: 33vw;
   color: #f7dfb2;
-  background-color: #a85710;
   transition: 0.2s;
 }
 
 a:hover {
-  background-color: #51011d;
+  background-color: #a85710;
 }
 </style>

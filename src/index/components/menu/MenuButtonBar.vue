@@ -27,10 +27,10 @@
   </div>
   <div class="collapsable">
     <button v-if="!show" @click="show = !show" class="dropdown inactive">
-      Contato
+      Contato<i class="fa-solid fa-chevron-down"></i>
     </button>
     <button v-if="show" @click="show = !show" class="dropdown active">
-      Contato
+      Contato<i class="fa-solid fa-chevron-up"></i>
     </button>
     <CollapsableButtonBar v-if="show" />
   </div>
@@ -61,16 +61,29 @@ export default {
     display: none;
   }
 
+  .collapsable {
+    display: block;
+  }
+
   .dropdown {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+
     height: calc(var(--doc-vh) * 6);
     border: 0;
     cursor: pointer;
+    padding: 0 1rem;
+    margin-right: 1rem;
+    transition: 0.2s;
 
     background-color: #51011d;
     color: #a85710;
   }
 
-  .dropdown:hover {
+  .dropdown:hover,
+  .dropdown:hover > i {
     background-color: #a85710;
     color: #f7dfb2;
   }
@@ -80,9 +93,10 @@ export default {
     color: #a85710;
   }
 
-  .active {
+  .active,
+  .fa-chevron-up {
     color: #f7dfb2;
-    background-color: #a85710;
+    background-color: #51011d;
   }
 }
 
