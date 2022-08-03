@@ -47,6 +47,51 @@ export default {
 </script>
 
 <style scoped>
+@media screen and (max-width: 600px) {
+  #projectTitle {
+    font-size: 3rem;
+    padding: 0 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  #projectDescription {
+    text-align: left;
+    max-width: 60vw;
+    font-size: 1.2rem;
+    padding: 0 0.5rem;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 800px) {
+  #projectTitle {
+    font-size: 4rem;
+    padding: 0 0.8rem;
+    margin-bottom: 0.5rem;
+  }
+
+  #projectDescription {
+    text-align: left;
+    max-width: 60vw;
+    font-size: 1.6rem;
+    padding: 0 0.8rem;
+  }
+}
+
+@media screen and (min-width: 801px) {
+  #projectTitle {
+    font-size: 8rem;
+    padding: 0 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  #projectDescription {
+    text-align: left;
+    max-width: 60vw;
+    font-size: 2rem;
+    padding: 0 1rem;
+  }
+}
+
 .carousel {
   width: 100vw;
   height: 94vh;
@@ -65,8 +110,8 @@ export default {
 }
 
 img {
-  width: 100vw;
-  max-height: 94vh;
+  min-width: 100vw;
+  height: 94vh;
   object-fit: cover;
   transition: 0.2s;
 }
@@ -83,27 +128,20 @@ img {
 #projectTitle {
   font-family: Archivo;
   font-weight: 100;
-  font-size: 8rem;
   text-decoration: none;
 
   color: #f7dfb2;
   background-color: #51011d;
   opacity: 0.8;
-
-  padding: 0 1rem;
-  margin-bottom: 0.5rem;
 }
 
 #projectDescription {
   font-family: Archivo;
   font-weight: 100;
-  font-size: 2rem;
   text-decoration: none;
 
   color: #f7dfb2;
   background-color: #51011d;
   opacity: 0.8;
-
-  padding: 0 1rem;
 }
 </style>
