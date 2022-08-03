@@ -38,7 +38,9 @@ export default {
   }
 
   .textbox {
-    height: 64vh;
+    max-height: 64vh;
+    min-height: stretch;
+    min-height: -webkit-fill-available;
   }
 
   h1 {
