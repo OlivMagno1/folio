@@ -94,14 +94,12 @@ export default {
 
 .carousel {
   width: 100vw;
-  height: 94vh;
-  max-height: 94vh;
+  height: calc(var(--doc-vh) * 94);
 }
 
 .slide-info {
-  height: 90vh;
-  max-height: 90vh;
-  margin-top: 10vh;
+  height: calc(var(--doc-vh) * 90);
+  margin-top: calc(var(--doc-vh) * 10);
 
   display: flex;
   flex-flow: row nowrap;
@@ -111,7 +109,7 @@ export default {
 
 img {
   min-width: 100vw;
-  height: 94vh;
+  height: calc(var(--doc-vh) * 94);
   object-fit: cover;
   transition: 0.2s;
 }
@@ -121,7 +119,7 @@ img {
   flex-flow: column nowrap;
   align-items: flex-start;
   position: fixed;
-  bottom: 20vh;
+  bottom: calc(var(--doc-vh) * 20);
   left: 12vw;
 }
 

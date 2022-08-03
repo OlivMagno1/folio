@@ -83,13 +83,13 @@ export default {
 
 .left {
   position: absolute;
-  top: 6vh;
+  top: calc(var(--doc-vh) * 6);
   left: 0;
 }
 
 .right {
   position: absolute;
-  top: 6vh;
+  top: calc(var(--doc-vh) * 6);
   right: 0;
 }
 
@@ -99,7 +99,7 @@ i {
   align-items: center;
   justify-content: center;
   width: 10vw;
-  height: 94vh;
+  height: calc(var(--doc-vh) * 94);
   color: #f7dfb2;
   transition: 0.2s;
 }
@@ -152,7 +152,7 @@ i {
 
 .pagination {
   position: absolute;
-  bottom: 5vh;
+  bottom: calc(var(--doc-vh) * 5);
   left: 0;
   width: 100vw;
 
@@ -164,15 +164,15 @@ i {
 
 span {
   cursor: pointer;
-  width: 10px;
-  height: 10px;
+  width: 0.7rem;
+  height: 0.7rem;
   border-radius: 50%;
   background-color: #51011d;
   transition: 0.2s;
 }
 
 .active {
-  width: 20px;
-  height: 20px;
+  width: 1.2rem;
+  height: 1.2rem;
 }
 </style>
