@@ -4,7 +4,7 @@
       <SlideComp v-for="(slide, index) in portfolioData" :key="index">
         <div v-show="currentSlide === index + 1" class="slide-info">
           <a :href="slide.address" target="_blank">
-            <img :src="require(`@/index/assets/images/${slide.address}.jpg`)" />
+            <img :src="require(`@/index/assets/images/${slide.image}.jpg`)" />
             <div class="descriptionBox">
               <h1 id="projectTitle">{{ slide.projectTitle }}</h1>
               <h2 id="projectDescription">{{ slide.description }}</h2>
@@ -30,15 +30,17 @@ export default {
     const portfolioData = [
       {
         projectTitle: "Plataforma",
-        address: "plataforma",
+        address: "../plataforma",
+        image: "plataforma",
         description:
-          "lorem ipsum si dolor amet descrição do projeto lorem ipsum",
+          "Single Page Application criada em Vue.js inspirada no layout do Ableton",
       },
       {
         projectTitle: "Café",
-        address: "cafe",
+        address: "../cafe",
+        image: "cafe",
         description:
-          "lorem ipsum si dolor amet descrição do projeto lorem ipsum",
+          "Single Page Application criada em Vue.js inspirada no layout do Lobe",
       },
     ];
     return { portfolioData };
