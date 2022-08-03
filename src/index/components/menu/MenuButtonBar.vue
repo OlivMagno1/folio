@@ -33,6 +33,7 @@
       Contato<i class="fa-solid fa-chevron-up"></i>
     </button>
     <CollapsableButtonBar v-if="show" />
+    <div v-if="show" class="blankSpace" @click="show = !show"></div>
   </div>
 </template>
 
@@ -53,6 +54,14 @@ export default {
 </script>
 
 <style scoped>
+.blankSpace {
+  position: absolute;
+  top: calc(var(--doc-vh) * 12);
+  left: 0;
+
+  width: 100vw;
+  height: calc(var(--doc-vh) * 88);
+}
 @media screen and (max-width: 600px) {
   i {
     width: 1.5rem;
