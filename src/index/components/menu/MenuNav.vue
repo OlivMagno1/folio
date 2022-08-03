@@ -1,7 +1,7 @@
 <template>
   <nav>
     <router-link to="/index">Sobre</router-link>
-    <router-link to="/index/folio">Portfolio</router-link>
+    <router-link to="/index/folio">Projetos</router-link>
     <MenuButtonBar />
   </nav>
 </template>

@@ -83,14 +83,14 @@ export default {
 
 .left {
   position: absolute;
-  top: 55vh;
-  left: 15vw;
+  top: 6vh;
+  left: 0;
 }
 
 .right {
   position: absolute;
-  top: 55vh;
-  right: 15vw;
+  top: 6vh;
+  right: 0;
 }
 
 i {
@@ -98,23 +98,61 @@ i {
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  background-color: #51011d;
+  width: 10vw;
+  height: 94vh;
   color: #f7dfb2;
   transition: 0.2s;
 }
 
-i:hover {
-  transform: scale(1.1);
-  color: #f7dfb2;
-  background-color: #a85710;
+.left i:hover {
+  background-image: linear-gradient(
+    90deg,
+    rgb(0% 0% 0% / 0.3) 0%,
+    rgb(0% 0% 0% / 0.298828125) 6.25%,
+    rgb(0% 0% 0% / 0.2953125) 12.5%,
+    rgb(0% 0% 0% / 0.289453125) 18.75%,
+    rgb(0% 0% 0% / 0.28125) 25%,
+    rgb(0% 0% 0% / 0.270703125) 31.25%,
+    rgb(0% 0% 0% / 0.2578125) 37.5%,
+    rgb(0% 0% 0% / 0.24257812499999998) 43.75%,
+    rgb(0% 0% 0% / 0.22499999999999998) 50%,
+    rgb(0% 0% 0% / 0.205078125) 56.25%,
+    rgb(0% 0% 0% / 0.1828125) 62.5%,
+    rgb(0% 0% 0% / 0.158203125) 68.75%,
+    rgb(0% 0% 0% / 0.13125) 75%,
+    rgb(0% 0% 0% / 0.101953125) 81.25%,
+    rgb(0% 0% 0% / 0.0703125) 87.5%,
+    rgb(0% 0% 0% / 0.03632812499999999) 93.75%,
+    rgb(0% 0% 0% / 0) 100%
+  );
+}
+
+.right i:hover {
+  background-image: linear-gradient(
+    270deg,
+    rgb(0% 0% 0% / 0.3) 0%,
+    rgb(0% 0% 0% / 0.298828125) 6.25%,
+    rgb(0% 0% 0% / 0.2953125) 12.5%,
+    rgb(0% 0% 0% / 0.289453125) 18.75%,
+    rgb(0% 0% 0% / 0.28125) 25%,
+    rgb(0% 0% 0% / 0.270703125) 31.25%,
+    rgb(0% 0% 0% / 0.2578125) 37.5%,
+    rgb(0% 0% 0% / 0.24257812499999998) 43.75%,
+    rgb(0% 0% 0% / 0.22499999999999998) 50%,
+    rgb(0% 0% 0% / 0.205078125) 56.25%,
+    rgb(0% 0% 0% / 0.1828125) 62.5%,
+    rgb(0% 0% 0% / 0.158203125) 68.75%,
+    rgb(0% 0% 0% / 0.13125) 75%,
+    rgb(0% 0% 0% / 0.101953125) 81.25%,
+    rgb(0% 0% 0% / 0.0703125) 87.5%,
+    rgb(0% 0% 0% / 0.03632812499999999) 93.75%,
+    rgb(0% 0% 0% / 0) 100%
+  );
 }
 
 .pagination {
   position: absolute;
-  bottom: 10vh;
+  bottom: 5vh;
   left: 0;
   width: 100vw;
 
