@@ -34,53 +34,53 @@ export default {
 </script>
 
 <style scoped>
-@media screen and (max-width: 960px) {
-  .buttonContainer {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-evenly;
-    align-items: center;
-
-    margin-right: 2vw;
-    width: 30vw;
-  }
-
+@media screen and (max-width: 600px) {
   i {
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    width: 2rem;
-    height: 2rem;
-    background-color: #f7dfb2;
-    color: #a85710;
-    transition: 0.2s;
+    width: 1.5rem;
+  }
+  .buttonContainer {
+    width: 20vw;
   }
 }
 
-@media screen and (min-width: 961px) {
-  .buttonContainer {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-evenly;
-    align-items: center;
-
-    width: 10vw;
-  }
-
+@media screen and (min-width: 601px) and (max-width: 800px) {
   i {
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 3rem;
-    height: 6vh;
-    border: 0;
-    background-color: #51011d;
-    color: #a85710;
-    transition: 0.2s;
+    width: 2.25rem;
   }
+  .buttonContainer {
+    width: 25vw;
+  }
+}
+
+@media screen and (min-width: 801px) {
+  i {
+    width: 3rem;
+  }
+
+  .buttonContainer {
+    width: 30vw;
+  }
+}
+
+i {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 6vh;
+  border: 0;
+
+  background-color: #51011d;
+  color: #a85710;
+  transition: 0.2s;
+}
+
+.buttonContainer {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 a {

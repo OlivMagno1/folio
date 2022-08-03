@@ -17,33 +17,65 @@ export default {
 </script>
 
 <style scoped>
+@media screen and (max-width: 600px) {
+  nav {
+    width: 50vw;
+  }
+
+  nav a.router-link-exact-active {
+    display: none;
+  }
+
+  nav a {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 800px) {
+  nav {
+    width: 35vw;
+  }
+
+  nav a {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 801px) {
+  nav {
+    width: 25vw;
+  }
+
+  nav a {
+    font-size: 1.25rem;
+  }
+}
 nav {
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
   justify-content: flex-end;
-
-  width: 20vw;
 }
 
 nav a {
-  height: 6vh;
-  font-size: 1.25em;
-  font-weight: 100;
-  background-color: #51011d;
-  color: #a85710;
-  text-decoration: none;
-  transition: 0.2s;
-  padding: 0 16px;
-
   display: flex;
   align-items: center;
   justify-content: center;
+
+  margin: 0 1rem;
+  padding: 0 1rem;
+  height: 6vh;
+  font-weight: 100;
+
+  text-decoration: none;
+  color: #a85710;
+  background-color: #51011d;
+  transition: 0.2s;
 }
 
 nav a:hover {
-  background-color: #a85710;
   color: #f7dfb2;
+  background-color: #a85710;
 }
 
 nav a.router-link-exact-active {
@@ -51,7 +83,7 @@ nav a.router-link-exact-active {
 }
 
 nav a.router-link-exact-active:hover {
-  background-color: #a85710;
   color: #51011d;
+  background-color: #a85710;
 }
 </style>

@@ -16,117 +16,128 @@
         <h2 class="right">Este é o meu cantinho <span>:)</span></h2>
       </Transition>
     </div>
-    <div>
-      <SkillsBody />
-    </div>
-    <div class="portfolioMobileContainer">
-      <PortfolioMobile />
-    </div>
+    <SkillsBody />
   </div>
 </template>
 
 <script>
-import PortfolioMobile from "../components/body/PortfolioMobile.vue";
 import SkillsBody from "@/index/components/body/SkillsBody.vue";
 
 export default {
   name: "AboutMe",
   components: {
     SkillsBody,
-    PortfolioMobile,
   },
 };
 </script>
 
 <style scoped>
-@media screen and (max-width: 960px) {
-  .textbox {
-    display: flex;
+@media screen and (max-width: 600px) {
+  .container {
     flex-flow: column nowrap;
-
-    justify-content: center;
-    align-items: flex-start;
-
-    margin-top: 15vh;
-    width: 90vw;
-    height: 60vh;
   }
 
-  .portfolioMobileContainer {
-    display: block;
+  .textbox {
+    height: 64vh;
   }
 
   h1 {
-    font-size: 2em;
-    color: #28000e;
-    cursor: default;
+    font-size: 2rem;
   }
 
   h2 {
-    font-size: 1.5em;
-    color: #28000e;
-    margin: 0.5em;
-    cursor: default;
+    font-size: 1.2rem;
   }
 
   p {
-    font-size: 1.2em;
-    color: #28000e;
-    margin: 0.5em;
-    text-align: justify;
-    cursor: default;
+    font-size: 1rem;
+    line-height: 1.6rem;
   }
 }
 
-@media screen and (min-width: 961px) {
-  .textbox {
-    display: flex;
+@media screen and (min-width: 601px) and (max-width: 800px) {
+  .container {
     flex-flow: column nowrap;
-
-    justify-content: center;
-    align-items: flex-start;
-
-    margin-top: 6vh;
-    width: 70vw;
-    height: 94vh;
-    padding-left: 13vw;
-    padding-right: 5vw;
   }
 
-  .portfolioMobileContainer {
-    display: none;
+  .textbox {
+    height: 64vh;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  h2 {
+    font-size: 2.1rem;
+  }
+
+  p {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+  }
+}
+
+@media screen and (min-width: 801px) {
+  .container {
+    flex-flow: row nowrap;
+  }
+
+  .textbox {
+    height: 94vh;
   }
 
   h1 {
     font-size: 5rem;
-    color: #28000e;
-    cursor: default;
   }
 
   h2 {
     font-size: 3rem;
-    color: #28000e;
-    margin: 0.5em;
-    cursor: default;
   }
 
   p {
     font-size: 2.2rem;
-    color: #28000e;
-    margin: 0.5em;
-    text-align: justify;
-    cursor: default;
     line-height: 3.25rem;
   }
 }
 
+.textbox {
+  display: flex;
+  flex-flow: column nowrap;
+
+  justify-content: center;
+  align-items: flex-start;
+
+  margin-top: 6vh;
+  width: 70vw;
+  padding-left: 13vw;
+  padding-right: 5vw;
+}
+
 .container {
   display: flex;
-  flex-flow: row nowrap;
   justify-content: space-between;
   align-items: flex-start;
 
   background-color: #f7dfb2;
+}
+
+h1 {
+  color: #28000e;
+  cursor: default;
+}
+
+h2 {
+  color: #28000e;
+  margin: 0.5em;
+  cursor: default;
+}
+
+p {
+  color: #28000e;
+  margin: 0.5em;
+  text-align: justify;
+  cursor: default;
 }
 
 span {

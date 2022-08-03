@@ -1,9 +1,7 @@
 <template>
   <div class="container">
     <router-link to="/index"><span>Magno</span> Oliveira</router-link>
-    <div class="showPages">
-      <MenuNav />
-    </div>
+    <MenuNav />
   </div>
 </template>
 
@@ -20,47 +18,35 @@ export default {
 </script>
 
 <style scoped>
-@media screen and (max-width: 960px) {
-  .container {
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: center;
-    justify-content: space-between;
-  }
-
-  .showPages {
-    display: none;
-  }
-
+@media screen and (max-width: 600px) {
   a {
-    text-decoration: none;
-    color: #a85710;
-    font-size: 1.2rem;
-    margin-left: 2vw;
+    font-size: 1rem;
   }
 }
 
-@media screen and (min-width: 961px) {
-  .container {
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: center;
-    justify-content: space-between;
-  }
-
-  .showPages {
-    display: block;
-  }
-
+@media screen and (min-width: 601px) and (max-width: 800px) {
   a {
-    text-decoration: none;
-    color: #a85710;
-    font-size: 2rem;
-    margin: 0 1rem;
+    font-size: 1.5rem;
   }
+}
+
+@media screen and (min-width: 801px) {
+  a {
+    font-size: 2rem;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: #a85710;
+  margin: 0 1rem;
 }
 
 .container {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
   height: 6vh;
   width: 100vw;
   position: fixed;
