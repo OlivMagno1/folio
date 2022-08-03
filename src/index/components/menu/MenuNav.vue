@@ -24,7 +24,6 @@ nav {
   justify-content: flex-end;
 
   width: 30vw;
-  padding: 30px;
 }
 
 nav a {

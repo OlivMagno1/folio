@@ -150,7 +150,7 @@ export default {
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   align-self: center;
 
   height: 94vh;
