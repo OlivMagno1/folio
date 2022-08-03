@@ -3,7 +3,7 @@
     <h1>Portfolio</h1>
     <div v-for="(slide, index) in portfolioData" :key="index" class="card">
       <a :href="slide.address" target="_blank">
-        <img :src="require(`@/index/assets/images/${slide.address}.jpg`)" />
+        <img :src="require(`@/index/assets/images/${slide.imageName}.jpg`)" />
       </a>
       <div class="descriptionContainer">
         <h2>{{ slide.projectTitle }}</h2>
@@ -26,7 +26,7 @@ export default {
       {
         projectTitle: "Plataforma",
         imageName: "plataformaMobile",
-        address: "plataformaMobile",
+        address: "plataforma",
         originalName: "Ableton",
         originalLink: "https://www.ableton.com/en/about/",
         description:
@@ -35,7 +35,7 @@ export default {
       {
         projectTitle: "Cafe",
         imageName: "cafeMobile",
-        address: "cafeMobile",
+        address: "cafe",
         originalName: "Lobe",
         originalLink: "https://www.lobe.ai/tour",
         description:

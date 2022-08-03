@@ -15,6 +15,8 @@
       <Transition name="fade" appear id="el3">
         <h2 class="right">Este é o meu cantinho <span>:)</span></h2>
       </Transition>
+    </div>
+    <div>
       <SkillsBody />
     </div>
     <div class="portfolioMobileContainer">
@@ -84,9 +86,10 @@ export default {
     justify-content: center;
     align-items: flex-start;
 
-    margin-top: 12vh;
-    width: 50vw;
-    height: 88vh;
+    margin-top: 6vh;
+    width: 90vw;
+    height: 94vh;
+    padding: 0 20vw;
   }
 
   .portfolioMobileContainer {
@@ -117,9 +120,9 @@ export default {
 
 .container {
   display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-items: center;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
 
   background-color: #f7dfb2;
 }

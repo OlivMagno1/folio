@@ -74,10 +74,10 @@ export default {
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 50%;
     width: 3rem;
-    height: 3rem;
-    background-color: #f7dfb2;
+    height: 6vh;
+    border: 0;
+    background-color: #51011d;
     color: #a85710;
     transition: 0.2s;
   }
@@ -88,7 +88,6 @@ a {
 }
 
 i:hover {
-  transform: scale(1.1);
   background-color: #a85710;
   color: #f7dfb2;
 }

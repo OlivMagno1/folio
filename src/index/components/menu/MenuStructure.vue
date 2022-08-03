@@ -4,20 +4,17 @@
     <div class="showPages">
       <MenuNav />
     </div>
-    <MenuButtonBar />
   </div>
 </template>
 
 <script>
 import "boxicons";
 import MenuNav from "@/index/components/menu/MenuNav.vue";
-import MenuButtonBar from "./MenuButtonBar.vue";
 
 export default {
   name: "MenuStructure",
   components: {
     MenuNav,
-    MenuButtonBar,
   },
 };
 </script>
@@ -48,7 +45,7 @@ export default {
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
   }
 
   .showPages {
@@ -58,11 +55,12 @@ export default {
   h1 {
     color: #a85710;
     cursor: default;
+    margin: 0 1rem;
   }
 }
 
 .container {
-  height: 12vh;
+  height: 6vh;
   width: 100vw;
   position: fixed;
 

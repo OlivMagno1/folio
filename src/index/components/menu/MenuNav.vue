@@ -2,12 +2,17 @@
   <nav>
     <router-link to="/index">Sobre</router-link>
     <router-link to="/index/folio">Portfolio</router-link>
+    <MenuButtonBar />
   </nav>
 </template>
 
 <script>
+import MenuButtonBar from "./MenuButtonBar.vue";
 export default {
   name: "MenuNav",
+  components: {
+    MenuButtonBar,
+  },
 };
 </script>
 
@@ -18,25 +23,36 @@ nav {
   align-items: center;
   justify-content: flex-end;
 
-  gap: 16px;
   width: 30vw;
   padding: 30px;
 }
 
 nav a {
+  height: 6vh;
   font-size: 1.25em;
   font-weight: 100;
-  color: #f7dfb2;
+  background-color: #51011d;
+  color: #a85710;
   text-decoration: none;
   transition: 0.2s;
+  padding: 0 16px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 nav a:hover {
-  transform: scale(1.1);
-  color: #a85710;
+  background-color: #a85710;
+  color: #f7dfb2;
 }
 
 nav a.router-link-exact-active {
-  color: #a85710;
+  color: #f7dfb2;
+}
+
+nav a.router-link-exact-active:hover {
+  background-color: #a85710;
+  color: #51011d;
 }
 </style>

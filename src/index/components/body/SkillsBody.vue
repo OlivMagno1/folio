@@ -117,8 +117,8 @@ export default {
 
 @media screen and (min-width: 961px) {
   .skillCards {
-    min-width: 5rem;
-    max-width: 5rem;
+    min-width: 10vw;
+    max-width: 10vw;
     min-height: 5rem;
     max-height: 5rem;
 
@@ -127,10 +127,9 @@ export default {
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
+    width: 10vw;
 
-    background-color: #51011d;
-    margin: 1rem;
-    border-radius: 50%;
+    background-color: #f7dfb2;
     transition: 0.2s;
   }
 
@@ -141,7 +140,7 @@ export default {
   p {
     font-family: Archivo, sans-serif;
     font-size: 1rem;
-    color: #f7dfb2;
+    color: #51011d;
     margin: 1rem;
     cursor: default;
   }
@@ -149,17 +148,18 @@ export default {
 
 .section {
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
   align-self: center;
 
-  margin-top: 10vh;
-  width: 30vw;
+  height: 94vh;
+  margin-top: 6vh;
+  width: 10vw;
 }
 
 i {
-  color: #f7dfb2;
+  color: #51011d;
   margin: 1rem;
 }
 
