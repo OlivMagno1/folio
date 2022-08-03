@@ -21,25 +21,30 @@ export default {
 @media screen and (max-width: 600px) {
   a {
     font-size: 1rem;
+    position: relative;
+    left: 1rem;
   }
 }
 
 @media screen and (min-width: 601px) and (max-width: 800px) {
   a {
     font-size: 1.5rem;
+    position: relative;
+    left: 12vw;
   }
 }
 
 @media screen and (min-width: 801px) {
   a {
     font-size: 2rem;
+    position: relative;
+    left: 12vw;
   }
 }
 
 a {
   text-decoration: none;
   color: #a85710;
-  margin: 0 1rem;
 }
 
 .container {

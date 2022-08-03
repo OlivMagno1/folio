@@ -32,7 +32,9 @@
     <button v-if="show" @click="show = !show" class="dropdown active">
       Contato<i class="fa-solid fa-chevron-up"></i>
     </button>
-    <CollapsableButtonBar v-if="show" />
+    <Transition name="slide">
+      <CollapsableButtonBar v-if="show" />
+    </Transition>
     <div v-if="show" class="blankSpace" @click="show = !show"></div>
   </div>
 </template>
@@ -62,6 +64,7 @@ export default {
   width: 100vw;
   height: calc(var(--doc-vh) * 88);
 }
+
 @media screen and (max-width: 600px) {
   i {
     width: 1.5rem;
@@ -72,6 +75,7 @@ export default {
 
   .collapsable {
     display: block;
+    z-index: 999;
   }
 
   .dropdown {
@@ -83,9 +87,9 @@ export default {
     height: calc(var(--doc-vh) * 6);
     border: 0;
     cursor: pointer;
-    padding: 0 1rem;
-    margin-right: 1rem;
+    padding-left: 1rem;
     transition: 0.2s;
+    font-size: 0.8rem;
 
     background-color: #51011d;
     color: #a85710;
@@ -107,6 +111,20 @@ export default {
     color: #f7dfb2;
     background-color: #51011d;
   }
+
+  .slide-enter-active {
+    transition: all 0.3s ease-out;
+  }
+
+  .slide-leave-active {
+    transition: all 0.3s ease-in;
+  }
+
+  .slide-enter-from,
+  .slide-leave-to {
+    transform: translateY(-1em);
+    opacity: 0;
+  }
 }
 
 @media screen and (min-width: 601px) and (max-width: 800px) {
@@ -115,7 +133,6 @@ export default {
   }
   .buttonContainer {
     display: flex;
-    width: 25vw;
   }
 
   .collapsable {
@@ -130,7 +147,6 @@ export default {
 
   .buttonContainer {
     display: flex;
-    width: 30vw;
   }
 
   .collapsable {

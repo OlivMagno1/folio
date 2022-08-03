@@ -19,7 +19,7 @@ export default {
 <style scoped>
 @media screen and (max-width: 600px) {
   nav {
-    width: 50vw;
+    position: relative;
   }
 
   nav a.router-link-exact-active {
@@ -33,7 +33,8 @@ export default {
 
 @media screen and (min-width: 601px) and (max-width: 800px) {
   nav {
-    width: 35vw;
+    position: relative;
+    right: 12vw;
   }
 
   nav a {
@@ -43,18 +44,20 @@ export default {
 
 @media screen and (min-width: 801px) {
   nav {
-    width: 25vw;
+    position: relative;
+    right: 12vw;
   }
 
   nav a {
     font-size: 1.25rem;
   }
 }
+
 nav {
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: center;
 }
 
 nav a {
@@ -62,7 +65,6 @@ nav a {
   align-items: center;
   justify-content: center;
 
-  margin: 0 1rem;
   padding: 0 1rem;
   height: calc(var(--doc-vh) * 6);
   font-weight: 100;
