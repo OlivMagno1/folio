@@ -22,7 +22,7 @@ export default {
   align-items: center;
 
   width: 100vw;
-  height: 100vh;
+  height: calc(var(--doc-vh) * 100);
 
   background-color: #f7dfb2;
   overflow: hidden;
