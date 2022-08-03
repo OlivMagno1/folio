@@ -79,7 +79,7 @@ export default {
   .section {
     flex-flow: row wrap;
     width: 100vw;
-    height: 30vh;
+    height: calc(var(--doc-vh) * 30);
   }
 }
 
@@ -100,7 +100,7 @@ export default {
   .section {
     flex-flow: row wrap;
     width: 100vw;
-    height: 30vh;
+    height: calc(var(--doc-vh) * 30);
   }
 }
 
@@ -120,7 +120,7 @@ export default {
 
   .section {
     flex-flow: column nowrap;
-    height: 94vh;
+    height: calc(var(--doc-vh) * 94);
     margin-top: 6vh;
     width: 20vw;
   }

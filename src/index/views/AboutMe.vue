@@ -35,10 +35,12 @@ export default {
 @media screen and (max-width: 600px) {
   .container {
     flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: space-between;
   }
 
   .textbox {
-    height: 64vh;
+    height: calc(var(--doc-vh) * 64);
   }
 
   h1 {
@@ -61,7 +63,7 @@ export default {
   }
 
   .textbox {
-    height: 64vh;
+    height: calc(var(--doc-vh) * 64);
   }
 
   h1 {
@@ -84,7 +86,7 @@ export default {
   }
 
   .textbox {
-    height: 94vh;
+    height: calc(var(--doc-vh) * 94);
   }
 
   h1 {
@@ -108,7 +110,7 @@ export default {
   justify-content: center;
   align-items: flex-start;
 
-  margin-top: 6vh;
+  margin-top: calc(var(--doc-vh) * 6);
   width: 70vw;
   padding-left: 13vw;
   padding-right: 5vw;

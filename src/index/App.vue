@@ -12,7 +12,8 @@ import MenuStructure from "./components/menu/MenuStructure.vue";
 //vh fix
 const documentHeight = () => {
   const doc = document.documentElement;
-  doc.style.setProperty("--doc-height", `${window.innerHeight}px`);
+  var vh = window.innerHeight * 0.01;
+  doc.style.setProperty("--doc-vh", `${vh}px`);
 };
 
 window.addEventListener("resize", documentHeight);
@@ -29,7 +30,7 @@ export default {
 
 <style>
 :root {
-  --doc-height: 100%;
+  --doc-vh: 0;
 }
 
 * {
@@ -59,6 +60,6 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  max-height: var(--doc-height);
+  height: var(--doc-height);
 }
 </style>

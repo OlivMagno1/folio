@@ -47,7 +47,7 @@ a {
   flex-flow: row nowrap;
   align-items: center;
   justify-content: space-between;
-  height: 6vh;
+  height: calc(var(--doc-vh) * 6);
   width: 100vw;
   position: fixed;
 
