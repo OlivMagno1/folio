@@ -68,7 +68,7 @@ i {
   align-items: center;
   justify-content: center;
 
-  height: 6vh;
+  height: calc(var(--doc-vh) * 6);
   border: 0;
 
   background-color: #51011d;

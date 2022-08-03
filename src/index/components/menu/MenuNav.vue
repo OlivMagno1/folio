@@ -64,7 +64,7 @@ nav a {
 
   margin: 0 1rem;
   padding: 0 1rem;
-  height: 6vh;
+  height: calc(var(--doc-vh) * 6);
   font-weight: 100;
 
   text-decoration: none;
