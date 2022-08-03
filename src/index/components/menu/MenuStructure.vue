@@ -52,6 +52,7 @@ a {
   position: fixed;
 
   background-color: #51011d;
+  z-index: 999;
 }
 
 span {

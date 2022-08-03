@@ -25,11 +25,30 @@
       <i class="fa-brands fa-github"></i>
     </a>
   </div>
+  <div class="collapsable">
+    <button v-if="!show" @click="show = !show" class="dropdown inactive">
+      Contato
+    </button>
+    <button v-if="show" @click="show = !show" class="dropdown active">
+      Contato
+    </button>
+    <CollapsableButtonBar v-if="show" />
+  </div>
 </template>
 
 <script>
+import CollapsableButtonBar from "./CollapsableButtonBar.vue";
+
 export default {
   name: "MenuButtonBar",
+  components: {
+    CollapsableButtonBar,
+  },
+  data() {
+    return {
+      show: false,
+    };
+  },
 };
 </script>
 
@@ -39,7 +58,31 @@ export default {
     width: 1.5rem;
   }
   .buttonContainer {
-    width: 20vw;
+    display: none;
+  }
+
+  .dropdown {
+    height: calc(var(--doc-vh) * 6);
+    border: 0;
+    cursor: pointer;
+
+    background-color: #51011d;
+    color: #a85710;
+  }
+
+  .dropdown:hover {
+    background-color: #a85710;
+    color: #f7dfb2;
+  }
+
+  .inactive {
+    background-color: #51011d;
+    color: #a85710;
+  }
+
+  .active {
+    color: #f7dfb2;
+    background-color: #a85710;
   }
 }
 
@@ -48,7 +91,12 @@ export default {
     width: 2.25rem;
   }
   .buttonContainer {
+    display: flex;
     width: 25vw;
+  }
+
+  .collapsable {
+    display: none;
   }
 }
 
@@ -58,7 +106,12 @@ export default {
   }
 
   .buttonContainer {
+    display: flex;
     width: 30vw;
+  }
+
+  .collapsable {
+    display: none;
   }
 }
 
@@ -77,7 +130,6 @@ i {
 }
 
 .buttonContainer {
-  display: flex;
   flex-flow: row nowrap;
   justify-content: space-evenly;
   align-items: center;
