@@ -13,7 +13,7 @@
           <div class="slide-info">
             <i
               v-if="!hover[index]"
-              class="fa-3x"
+              class="fa-4x"
               :class="getCardLogo(index)"
             ></i>
             <p v-if="hover[index]">{{ card }}</p>
@@ -117,17 +117,17 @@ export default {
 
 @media screen and (min-width: 961px) {
   .skillCards {
-    min-width: 10vw;
-    max-width: 10vw;
+    min-width: 20vw;
+    max-width: 20vw;
     min-height: 5rem;
     max-height: 5rem;
+    margin: 0.5rem 0;
 
     display: flex;
     flex: 1;
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
-    width: 10vw;
 
     background-color: #f7dfb2;
     transition: 0.2s;
@@ -139,7 +139,7 @@ export default {
 
   p {
     font-family: Archivo, sans-serif;
-    font-size: 1rem;
+    font-size: 1.25rem;
     color: #51011d;
     margin: 1rem;
     cursor: default;
@@ -155,12 +155,12 @@ export default {
 
   height: 94vh;
   margin-top: 6vh;
-  width: 10vw;
+  width: 20vw;
 }
 
 i {
   color: #51011d;
-  margin: 1rem;
+  margin: 3rem;
 }
 
 .fade-enter-active,

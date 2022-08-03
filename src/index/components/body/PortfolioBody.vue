@@ -85,8 +85,10 @@ img {
   font-weight: 100;
   font-size: 8rem;
   text-decoration: none;
+
   color: #f7dfb2;
   background-color: #51011d;
+  opacity: 0.8;
 
   padding: 0 1rem;
   margin-bottom: 0.5rem;
@@ -97,8 +99,11 @@ img {
   font-weight: 100;
   font-size: 2rem;
   text-decoration: none;
+
   color: #f7dfb2;
   background-color: #51011d;
+  opacity: 0.8;
+
   padding: 0 1rem;
 }
 </style>

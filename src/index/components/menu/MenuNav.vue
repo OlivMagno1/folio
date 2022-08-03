@@ -23,7 +23,7 @@ nav {
   align-items: center;
   justify-content: flex-end;
 
-  width: 30vw;
+  width: 20vw;
 }
 
 nav a {

@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <h1><span>Magno</span> Oliveira</h1>
+    <router-link to="/index"><span>Magno</span> Oliveira</router-link>
     <div class="showPages">
       <MenuNav />
     </div>
@@ -32,9 +32,9 @@ export default {
     display: none;
   }
 
-  h1 {
+  a {
+    text-decoration: none;
     color: #a85710;
-    cursor: default;
     font-size: 1.2rem;
     margin-left: 2vw;
   }
@@ -52,9 +52,10 @@ export default {
     display: block;
   }
 
-  h1 {
+  a {
+    text-decoration: none;
     color: #a85710;
-    cursor: default;
+    font-size: 2rem;
     margin: 0 1rem;
   }
 }

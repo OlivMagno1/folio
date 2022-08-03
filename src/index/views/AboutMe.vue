@@ -2,11 +2,11 @@
   <div class="container">
     <div class="textbox">
       <Transition name="fade" appear id="el1">
-        <h1>Olá</h1>
+        <h1>Olá,</h1>
       </Transition>
       <Transition name="fade" appear id="el2">
         <p>
-          Meu nome é <span>Magno</span>, sou desenvolvedor Front-end. Sou
+          meu nome é <span>Magno</span>, sou desenvolvedor Front-end. Sou
           formado em Ciência da Computação pela Universidade Federal de São
           Paulo (UNIFESP). Eu desenvolvo interfaces responsivas com base em
           Vue.js, HTML e CSS.
@@ -87,9 +87,10 @@ export default {
     align-items: flex-start;
 
     margin-top: 6vh;
-    width: 90vw;
+    width: 70vw;
     height: 94vh;
-    padding: 0 20vw;
+    padding-left: 13vw;
+    padding-right: 5vw;
   }
 
   .portfolioMobileContainer {
@@ -97,24 +98,25 @@ export default {
   }
 
   h1 {
-    font-size: 5em;
+    font-size: 5rem;
     color: #28000e;
     cursor: default;
   }
 
   h2 {
-    font-size: 3em;
+    font-size: 3rem;
     color: #28000e;
     margin: 0.5em;
     cursor: default;
   }
 
   p {
-    font-size: 2em;
+    font-size: 2.2rem;
     color: #28000e;
     margin: 0.5em;
     text-align: justify;
     cursor: default;
+    line-height: 3.25rem;
   }
 }
 
