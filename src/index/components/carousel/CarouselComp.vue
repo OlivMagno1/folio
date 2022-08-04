@@ -69,6 +69,7 @@ export default {
       autoPlay();
     }
 
+    //Touch functionality
     function checkDirection() {
       if (touchendX < touchstartX) prevSlide();
       if (touchendX > touchstartX) nextSlide();
@@ -83,6 +84,13 @@ export default {
       checkDirection();
     });
 
+    //Arrow functionality
+    document.addEventListener("keydown", (e) => {
+      var key_code = e.key;
+      if (key_code === "ArrowLeft") prevSlide();
+      else if (key_code === "ArrowRight") nextSlide();
+    });
+
     onMounted(() => {
       getSlideCount.value = document.querySelectorAll(".slide").length;
     });
@@ -92,9 +100,17 @@ export default {
 </script>
 
 <style scoped>
-.toggle-page {
-  display: flex;
-  flex: 1;
+@media screen and (max-width: 600px) {
+  .toggle-page {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 601px) {
+  .toggle-page {
+    display: flex;
+    flex: 1;
+  }
 }
 
 .left {
