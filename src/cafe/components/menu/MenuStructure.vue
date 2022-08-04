@@ -20,7 +20,9 @@
         <i v-if="show" class="fa-solid fa-plus icon"></i>
       </Transition>
     </button>
-    <Transition name="slide">
+    <div v-if="!show" class="glassCollapsed" />
+    <div v-if="show" class="glassShown" />
+    <Transition name="slide" class="test">
       <CollapsableMenuNav v-if="show" @click="show = false" />
     </Transition>
   </div>
@@ -60,8 +62,25 @@ export default {
     position: fixed;
     width: 100vw;
     height: 8.5vh;
+  }
 
-    backdrop-filter: blur(50px) grayscale(30%);
+  .glassCollapsed {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 8.5vh;
+    z-index: -1;
+    transition: 0.2s;
+    backdrop-filter: blur(8px);
+  }
+  .glassShown {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 46.5vh;
+    z-index: -1;
+    transition: 0.2s;
+    backdrop-filter: blur(8px);
   }
 
   .slide-enter-active {

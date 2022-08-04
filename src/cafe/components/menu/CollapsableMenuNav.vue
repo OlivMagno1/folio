@@ -19,13 +19,14 @@ export default {
 <style scoped>
 nav {
   transition: 0.2s;
-  position: absolute;
+  position: fixed;
   top: 8.5vh;
   left: 0;
+
+  height: 38vh;
   display: flex;
   flex-flow: column nowrap;
   align-items: flex-start;
-  background-color: #fff;
 
   width: 100vw;
   border-bottom: 1px solid #767676;
@@ -36,7 +37,7 @@ nav a {
   font-weight: bold;
   font-size: 1rem;
   color: #767676;
-  margin: 1rem 0.75rem;
+  padding: 1rem 0.75rem;
 
   transition: 0.2s;
 }
