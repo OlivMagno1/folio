@@ -22,6 +22,7 @@
     </button>
     <div v-if="!show" class="glassCollapsed" />
     <div v-if="show" class="glassShown" />
+    <div v-if="show" @click="show = !show" class="outsideMenu" />
     <Transition name="slide" class="test">
       <CollapsableMenuNav v-if="show" @click="show = false" />
     </Transition>
@@ -47,9 +48,9 @@ export default {
 </script>
 
 <style scoped>
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 600px) {
   .MenuBarDesktop {
-    visibility: hidden;
+    display: none;
   }
 
   .MenuBarMobile {
@@ -57,7 +58,6 @@ export default {
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
-    visibility: visible;
 
     position: fixed;
     width: 100vw;
@@ -81,6 +81,14 @@ export default {
     z-index: -1;
     transition: 0.2s;
     backdrop-filter: blur(8px);
+  }
+
+  .outsideMenu {
+    position: fixed;
+    top: 46.5vh;
+
+    height: 53.5vh;
+    width: 100vw;
   }
 
   .slide-enter-active {
@@ -109,6 +117,27 @@ export default {
 
   .icon {
     position: absolute;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 800px) {
+  .MenuBarDesktop {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+    position: fixed;
+    width: 90vw;
+    height: 8.5vh;
+    margin-left: 5vw;
+    margin-right: 5vw;
+
+    backdrop-filter: blur(50px) grayscale(30%);
+  }
+
+  .MenuBarMobile {
+    display: none;
   }
 }
 
