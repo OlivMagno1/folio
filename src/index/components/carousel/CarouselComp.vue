@@ -32,6 +32,8 @@ export default {
     const getSlideCount = ref(null);
     const autoPlayEnabled = ref(true);
     const timeOutDuration = ref(30000);
+    let touchstartX = 0;
+    let touchendX = 0;
 
     //next slide
     const nextSlide = () => {
@@ -66,6 +68,20 @@ export default {
     if (autoPlayEnabled.value) {
       autoPlay();
     }
+
+    function checkDirection() {
+      if (touchendX < touchstartX) prevSlide();
+      if (touchendX > touchstartX) nextSlide();
+    }
+
+    document.addEventListener("touchstart", (e) => {
+      touchstartX = e.changedTouches[0].screenX;
+    });
+
+    document.addEventListener("touchend", (e) => {
+      touchendX = e.changedTouches[0].screenX;
+      checkDirection();
+    });
 
     onMounted(() => {
       getSlideCount.value = document.querySelectorAll(".slide").length;
