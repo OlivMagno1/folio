@@ -9,10 +9,10 @@
     </div>
     <div class="textParagraph">
       <p>
-        Conhecido como Café au lait na França e como pingado no Brasil, o Latte
-        traz toda a energia de um expresso em conjunto com o conforto de uma
-        generosa espuma de leite, adicionada especificamente para aquecer o
-        coração.
+        Derivado do francês "Frappé" (que significa "bater"), O Frappuccino é
+        uma batida de sorvete com capuccino. A receita pode ser variada com
+        diversos adicionais, sendo as mais comuns a adição de chocolate,
+        chantilly ou até uma dose extra de café.
       </p>
     </div>
   </div>
