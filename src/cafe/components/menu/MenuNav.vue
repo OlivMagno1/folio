@@ -11,12 +11,33 @@
 
 <style scoped>
 @media screen and (min-width: 601px) and (max-width: 800px) {
+  nav {
+    width: 50vw;
+    left: 25vw;
+  }
+
   nav a {
     font-size: 0.8rem;
   }
 }
 
-@media screen and (min-width: 801px) {
+@media screen and (min-width: 801px) and (max-width: 1000px) {
+  nav {
+    width: 40vw;
+    left: 30vw;
+  }
+
+  nav a {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (min-width: 1001px) {
+  nav {
+    width: 30vw;
+    left: 35vw;
+  }
+
   nav a {
     font-size: 1rem;
   }
@@ -28,10 +49,8 @@ nav {
   justify-content: space-around;
   align-items: center;
 
-  width: 50vw;
   height: 8.5vh;
   position: fixed;
-  left: 25vw;
   top: 0;
 }
 
