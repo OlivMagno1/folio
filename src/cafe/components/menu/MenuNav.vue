@@ -1,52 +1,43 @@
 <template>
-  <div class="center">
-    <nav>
-      <router-link to="/cafe/">Home</router-link>
-      <router-link to="/cafe/expresso">Expresso</router-link>
-      <router-link to="/cafe/latte">Latte</router-link>
-      <router-link to="/cafe/frappuccino">Frappuccino</router-link>
-    </nav>
-  </div>
+  <nav>
+    <router-link to="/cafe/">Home</router-link>
+    <router-link to="/cafe/expresso">Expresso</router-link>
+    <router-link to="/cafe/latte">Latte</router-link>
+    <router-link to="/cafe/frappuccino">Frappuccino</router-link>
+  </nav>
 </template>
 
 <script></script>
 
 <style scoped>
-@media screen and (max-width: 1280px) {
-  nav {
-    width: 40vw;
+@media screen and (min-width: 601px) and (max-width: 800px) {
+  nav a {
+    font-size: 0.8rem;
   }
 }
 
-@media screen and (min-width: 1281px) {
-  nav {
-    width: 25vw;
+@media screen and (min-width: 801px) {
+  nav a {
+    font-size: 1rem;
   }
 }
 
-.center {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
-
-  width: 60vw;
-  position: fixed;
-  left: 15vw;
-  top: 0;
-}
 nav {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-around;
+  align-items: center;
 
-  padding: 1rem;
-  line-height: 3rem;
+  width: 50vw;
+  height: 8.5vh;
+  position: fixed;
+  left: 25vw;
+  top: 0;
 }
 
 nav a {
   text-decoration: none;
   font-weight: bold;
-  font-size: 1rem;
   color: #767676;
 
   transition: 0.2s;

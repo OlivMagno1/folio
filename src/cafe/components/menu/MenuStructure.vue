@@ -1,27 +1,28 @@
 <template>
   <div class="MenuBarDesktop">
+    <div v-if="!show" class="glassBackdrop" />
     <router-link to="/cafe/" class="logo">
       <i class="fa-solid fa-mug-saucer"></i>
     </router-link>
     <MenuNav />
-    <button>
-      <router-link to="/aboutcafe/">Sobre este projeto</router-link>
+    <button class="filled">
+      <router-link to="/aboutcafe/">Sobre</router-link>
     </button>
   </div>
   <div class="MenuBarMobile">
     <router-link to="/cafe/" class="logo">
       <i class="fa-solid fa-mug-saucer"></i>
     </router-link>
-    <button @click="show = !show" class="emptyButton">
+    <button @click="show = !show" class="hollow">
       <Transition name="fade">
-        <i v-if="!show" class="fa-solid fa-bars icon"></i>
+        <i v-if="!show" class="fa-solid fa-bars"></i>
       </Transition>
       <Transition name="fade">
-        <i v-if="show" class="fa-solid fa-plus icon"></i>
+        <i v-if="show" class="fa-solid fa-plus"></i>
       </Transition>
     </button>
-    <div v-if="!show" class="glassCollapsed" />
-    <div v-if="show" class="glassShown" />
+    <div v-if="!show" class="glassBackdrop" />
+    <div v-if="show" class="glassBackdropMenu" />
     <div v-if="show" @click="show = !show" class="outsideMenu" />
     <Transition name="slide" class="test">
       <CollapsableMenuNav v-if="show" @click="show = false" />
@@ -55,67 +56,9 @@ export default {
 
   .MenuBarMobile {
     display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-    align-items: center;
-
-    position: fixed;
-    width: 100vw;
-    height: 8.5vh;
   }
 
-  .glassCollapsed {
-    position: fixed;
-    top: 0;
-    width: 100vw;
-    height: 8.5vh;
-    z-index: -1;
-    transition: 0.2s;
-    backdrop-filter: blur(8px);
-  }
-  .glassShown {
-    position: fixed;
-    top: 0;
-    width: 100vw;
-    height: 46.5vh;
-    z-index: -1;
-    transition: 0.2s;
-    backdrop-filter: blur(8px);
-  }
-
-  .outsideMenu {
-    position: fixed;
-    top: 46.5vh;
-
-    height: 53.5vh;
-    width: 100vw;
-  }
-
-  .slide-enter-active {
-    transition: all 0.3s ease-out;
-  }
-
-  .slide-leave-active {
-    transform: translateY(-1em);
-  }
-
-  .slide-enter-from,
-  .slide-leave-to {
-    transform: translateY(-1em);
-    opacity: 0;
-  }
-
-  .fade-enter-active,
-  .fade-leave-active {
-    transition: opacity 1s ease;
-  }
-
-  .fade-enter-from,
-  .fade-leave-to {
-    opacity: 0;
-  }
-
-  .icon {
+  .fa-solid {
     position: absolute;
   }
 }
@@ -123,17 +66,20 @@ export default {
 @media screen and (min-width: 601px) and (max-width: 800px) {
   .MenuBarDesktop {
     display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-    align-items: center;
+  }
 
-    position: fixed;
-    width: 90vw;
-    height: 8.5vh;
-    margin-left: 5vw;
-    margin-right: 5vw;
+  .MenuBarMobile {
+    display: none;
+  }
 
-    backdrop-filter: blur(50px) grayscale(30%);
+  button a {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (min-width: 801px) {
+  .MenuBarDesktop {
+    display: flex;
   }
 
   .MenuBarMobile {
@@ -141,40 +87,34 @@ export default {
   }
 }
 
-@media screen and (min-width: 961px) {
-  .MenuBarDesktop {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-    align-items: center;
-    visibility: visible;
+.MenuBarMobile,
+.MenuBarDesktop {
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
 
-    position: fixed;
-    width: 90vw;
-    height: 8.5vh;
-    margin-left: 5vw;
-    margin-right: 5vw;
-
-    backdrop-filter: blur(50px) grayscale(30%);
-  }
-
-  .MenuBarMobile {
-    visibility: hidden;
-  }
+  position: fixed;
+  width: 100vw;
+  height: 8.5vh;
 }
 
 button {
-  width: 13rem;
-  height: 3rem;
-  border-radius: 1.5rem;
+  width: 6rem;
+  height: 2rem;
+  border-radius: 1rem;
   border: 0;
+  margin: 0 5vw;
 
   background-color: #916047;
 
   transition: 0.2s;
 }
 
-.emptyButton {
+button:hover {
+  transform: scale(1.1);
+}
+
+.hollow {
   position: relative;
   display: flex;
   justify-content: center;
@@ -192,7 +132,6 @@ button {
 
 a {
   font-family: LabGrotesque, Helvetica, Arial, sans-serif;
-  font-size: 1.2em;
   font-weight: 700;
   color: #916047;
   text-decoration: none;
@@ -200,14 +139,56 @@ a {
 }
 
 button a {
-  font-family: LabGrotesque, Helvetica, Arial, sans-serif;
-  font-size: 1.2em;
-  font-weight: 700;
   color: #ffffff;
-  text-decoration: none;
 }
 
-button:hover {
-  transform: scale(1.1);
+/*Effect for backdrop*/
+.glassBackdrop {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 8.5vh;
+  z-index: -1;
+  transition: 0.2s;
+  backdrop-filter: blur(8px);
+}
+.glassBackdropMenu {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 46.5vh;
+  z-index: -1;
+  transition: 0.2s;
+  backdrop-filter: blur(8px);
+}
+
+.outsideMenu {
+  position: fixed;
+  top: 46.5vh;
+
+  height: 53.5vh;
+  width: 100vw;
+}
+
+/* Transition effects */
+.slide-enter-active,
+.slide-leave-active {
+  transition: all 0.3s ease-out;
+}
+
+.slide-enter-from,
+.slide-leave-to {
+  transform: translateY(-1em);
+  opacity: 0;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 1s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
 }
 </style>
