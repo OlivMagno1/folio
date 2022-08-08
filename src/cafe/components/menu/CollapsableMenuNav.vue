@@ -29,7 +29,6 @@ nav {
   align-items: flex-start;
 
   width: 100vw;
-  border-bottom: 1px solid #767676;
 }
 
 nav a {
