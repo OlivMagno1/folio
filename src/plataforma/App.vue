@@ -30,6 +30,13 @@ export default {
   margin: 0;
 }
 
+h1,
+h2,
+h3,
+p {
+  cursor: default;
+}
+
 @media screen and (max-width: 960px) {
   h2 {
     font-size: 0.9rem;
