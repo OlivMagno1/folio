@@ -8,8 +8,9 @@
         <p>
           meu nome é <span>Magno</span>, sou desenvolvedor Front-end. Sou
           formado em Ciência da Computação pela Universidade Federal de São
-          Paulo (UNIFESP). Eu desenvolvo interfaces responsivas com base em
-          Vue.js, HTML e CSS.
+          Paulo (UNIFESP). Estou reunindo aqui os meus projetos pessoais, com
+          foco em trazer modernidade e responsividade em interfaces agradáveis
+          de usar.
         </p>
       </Transition>
       <Transition name="fade" appear id="el3">
