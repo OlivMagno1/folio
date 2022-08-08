@@ -24,6 +24,13 @@ export default {
   margin: 0;
 }
 
+h1,
+h2,
+h3,
+p {
+  cursor: default;
+}
+
 @font-face {
   font-family: LabGrotesque;
   src: "@/assets/fonts/Lab-Grotesque-Regular.ttf";
