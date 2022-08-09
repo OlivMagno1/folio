@@ -29,7 +29,7 @@ export default {
   background-size: cover;
   background-position: center;
   width: 70vw;
-  height: 85vh;
+  height: 44vw;
 
   display: flex;
   justify-content: center;
@@ -37,7 +37,7 @@ export default {
 }
 
 .title {
-  font-size: 10rem;
+  font-size: 4rem;
   color: #ff764d;
 }
 </style>
