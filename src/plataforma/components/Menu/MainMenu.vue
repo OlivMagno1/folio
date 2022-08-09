@@ -46,39 +46,10 @@ export default {
 
   .mobile {
     display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-evenly;
-    align-items: center;
-    background-color: #ffffff;
   }
   .container {
     width: 100vw;
     height: 8vh;
-    justify-content: space-between;
-    border-bottom: 1px solid #e6e6e6;
-  }
-
-  button {
-    font-family: Futura;
-    font-size: 1.2rem;
-    background-color: #fff;
-    border: 0px;
-    margin-left: 5vw;
-    cursor: pointer;
-  }
-
-  .slide-enter-active {
-    transition: all 0.3s ease-out;
-  }
-
-  .slide-leave-active {
-    transform: translateY(-1em);
-  }
-
-  .slide-enter-from,
-  .slide-leave-to {
-    transform: translateY(-1em);
-    opacity: 0;
   }
 }
 
@@ -89,10 +60,6 @@ export default {
 
   .desktop {
     display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-evenly;
-    align-items: center;
-    background-color: #ffffff;
   }
 
   .container {
@@ -100,13 +67,29 @@ export default {
     height: 8vh;
     margin-left: 8vw;
     margin-right: 8vw;
-    justify-content: space-between;
-    border-bottom: 1px solid #e6e6e6;
   }
 }
 
+.mobile {
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #ffffff;
+}
+
+.desktop {
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #ffffff;
+}
+
+.container {
+  justify-content: space-between;
+  border-bottom: 1px solid #e6e6e6;
+}
 .left {
-  width: 24vw;
+  width: 30vw;
 }
 
 .right {
@@ -131,5 +114,28 @@ export default {
 
 .menuitemblue {
   color: #0000ff;
+}
+
+button {
+  font-family: Futura;
+  font-size: 1.2rem;
+  background-color: #fff;
+  border: 0px;
+  margin-left: 5vw;
+  cursor: pointer;
+}
+
+.slide-enter-active {
+  transition: all 0.3s ease-out;
+}
+
+.slide-leave-active {
+  transform: translateY(-1em);
+}
+
+.slide-enter-from,
+.slide-leave-to {
+  transform: translateY(-1em);
+  opacity: 0;
 }
 </style>
