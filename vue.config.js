@@ -14,6 +14,10 @@ module.exports = defineConfig({
     plataforma: {
       entry: "src/plataforma/main.js",
       title: "Magno Oliveira - Plataforma",
+    },
+    medievalcat: {
+      entry: "src/medievalcat/main.js",
+      title: "Magno Oliveira - Medievalcat",
     }
   },
 });
