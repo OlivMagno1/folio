@@ -7,9 +7,8 @@
 </template>
 
 <script>
-// @ is an alias to /src
-import MenuStructure from "@/components/menu/MenuStructure.vue";
-import BodyHeader from "@/components/body/BodyHeader.vue";
+import MenuStructure from "@/medievalcat/components/menu/MenuStructure.vue";
+import BodyHeader from "@/medievalcat/components/body/BodyHeader.vue";
 
 export default {
   name: "HomeView",
@@ -27,7 +26,7 @@ export default {
       rgba(0, 0, 0, 0.52),
       rgba(0, 0, 0, 1)
     ),
-    url("@/assets/images/tempero-bg.jpg");
+    url("@/medievalcat/assets/images/medcat.png");
   filter: blur(4px);
   -webkit-filter: blur(4px);
   background-size: 100vw;

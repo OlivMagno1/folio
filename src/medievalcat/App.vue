@@ -3,12 +3,18 @@
 </template>
 
 <style>
+@font-face {
+  font-family: "KingHarold";
+  src: local("KingHarold"),
+    url(@/medievalcat/assets/fonts/kingharold.ttf) format("TrueType");
+}
+
 * {
   margin: 0;
 }
 
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: KingHarold;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;

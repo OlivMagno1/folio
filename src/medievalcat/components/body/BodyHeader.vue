@@ -1,14 +1,14 @@
 <template>
   <div class="HeaderContainer">
     <div class="ImageContainer">
-      <img src="@/assets/images/tempero.jpg" />
+      <img src="@/medievalcat/assets/images/medcat.png" />
     </div>
     <div class="TitleContainer">
       <div>
-        <h1>LEVEL DAYS</h1>
+        <h1>MEDIEVAL DAYS</h1>
       </div>
       <div class="">
-        <h2>CONRO</h2>
+        <h2>THY LAIRD</h2>
       </div>
       <div class="ButtonLevel">
         <button class="Filled">LISTEN NOW</button>
