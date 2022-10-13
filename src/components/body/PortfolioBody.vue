@@ -42,6 +42,13 @@ export default {
         description:
           "Single Page Application criada em Vue.js inspirada no layout do Lobe",
       },
+      {
+        projectTitle: "Arquimovelaria",
+        address: "https://elaborate-granita-5568c7.netlify.app",
+        image: "moveis",
+        description:
+          "Design de página web para uma empresa de móveis planejados",
+      },
     ];
     return { portfolioData };
   },
