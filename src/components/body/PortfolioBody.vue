@@ -29,11 +29,11 @@ export default {
   setup() {
     const portfolioData = [
       {
-        projectTitle: "Plataforma",
-        address: "https://clinquant-malasada-132d92.netlify.app",
-        image: "plataforma",
+        projectTitle: "Arquimovelaria",
+        address: "https://elaborate-granita-5568c7.netlify.app",
+        image: "moveis",
         description:
-          "Single Page Application criada em Vue.js inspirada no layout do Ableton",
+          "Design de página web para uma empresa de móveis planejados",
       },
       {
         projectTitle: "Café",
@@ -43,11 +43,11 @@ export default {
           "Single Page Application criada em Vue.js inspirada no layout do Lobe",
       },
       {
-        projectTitle: "Arquimovelaria",
-        address: "https://elaborate-granita-5568c7.netlify.app",
-        image: "moveis",
+        projectTitle: "Plataforma",
+        address: "https://clinquant-malasada-132d92.netlify.app",
+        image: "plataforma",
         description:
-          "Design de página web para uma empresa de móveis planejados",
+          "Single Page Application criada em Vue.js inspirada no layout do Ableton",
       },
     ];
     return { portfolioData };
