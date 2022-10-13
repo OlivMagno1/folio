@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <router-link to="/index"><span>Magno</span> Oliveira</router-link>
+    <router-link to="/"><span>Magno</span> Oliveira</router-link>
     <MenuNav />
   </div>
 </template>
