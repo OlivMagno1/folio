@@ -30,14 +30,14 @@ export default {
     const portfolioData = [
       {
         projectTitle: "Plataforma",
-        address: "../plataforma",
+        address: "https://clinquant-malasada-132d92.netlify.app",
         image: "plataforma",
         description:
           "Single Page Application criada em Vue.js inspirada no layout do Ableton",
       },
       {
         projectTitle: "Café",
-        address: "../cafe",
+        address: "https://tranquil-clafoutis-236e51.netlify.app",
         image: "cafe",
         description:
           "Single Page Application criada em Vue.js inspirada no layout do Lobe",
